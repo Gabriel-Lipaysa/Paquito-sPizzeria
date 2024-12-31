@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,17 +12,17 @@ using MySql.Data.MySqlClient;
 
 namespace Paquito_sPizzeria
 {
-    public partial class Users : Form
+    
+    public partial class Admin : Form
     {
         private string connectionString = "Server=localhost;Uid=root;Database=pizza_db_crev;";
-        public Users()
+        public Admin()
         {
             InitializeComponent();
         }
-
         public void display()
         {
-            string query = "select id, name, email from user";
+            string query = "select id, name from admin";
             var conn = new MySqlConnection(connectionString);
             using (var cmd = new MySqlCommand(query, conn))
             {
@@ -41,19 +42,19 @@ namespace Paquito_sPizzeria
             }
         }
 
-        private void Users_Load(object sender, EventArgs e)
+        private void Admin_Load(object sender, EventArgs e)
         {
-           display();
+            display();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void deleteBtn_Click(object sender, EventArgs e)
         {
-            string query = "Delete from user where id = @id";
-            
+            string query = "Delete from admin where id = @id";
+
             if (UsersGridView.SelectedCells.Count > 0)
             {
                 var selectedCell = UsersGridView.CurrentCell;
-                var rowIndex= selectedCell.RowIndex;
+                var rowIndex = selectedCell.RowIndex;
                 var selectedRow = UsersGridView.Rows[rowIndex];
                 var cellValue = selectedRow.Cells["id"].Value;
                 int id = int.Parse(cellValue.ToString());
@@ -68,12 +69,40 @@ namespace Paquito_sPizzeria
                         cmd.ExecuteNonQuery();
                         display();
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message);
                     }
                 }
             }
+        }
+
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            if (UsersGridView.SelectedCells.Count > 0)
+            {
+                var selectedCell = UsersGridView.CurrentCell;
+                var rowIndex = selectedCell.RowIndex;
+                var selectedRow = UsersGridView.Rows[rowIndex];
+                var cellValueId = selectedRow.Cells["id"].Value;
+                var cellValueName = selectedRow.Cells["name"].Value;
+
+                int id = int.Parse(cellValueId.ToString());
+                String name = cellValueName.ToString();
+
+                update_admin update = new update_admin(id, name);
+                update.ShowDialog();
+                display();
+            }
+
+            
+        }
+
+        private void registerBtn_Click(object sender, EventArgs e)
+        {
+            register_admin register = new register_admin();
+            register.ShowDialog();
+            display();
         }
     }
 }

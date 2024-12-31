@@ -30,9 +30,9 @@
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.UsersGridView = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UsersGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -51,15 +51,15 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "User Accounts";
             // 
-            // dataGridView1
+            // UsersGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(85, 100);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(581, 176);
-            this.dataGridView1.TabIndex = 2;
+            this.UsersGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.UsersGridView.Location = new System.Drawing.Point(85, 100);
+            this.UsersGridView.Name = "UsersGridView";
+            this.UsersGridView.RowHeadersWidth = 51;
+            this.UsersGridView.RowTemplate.Height = 24;
+            this.UsersGridView.Size = new System.Drawing.Size(581, 176);
+            this.UsersGridView.TabIndex = 2;
             // 
             // button1
             // 
@@ -69,6 +69,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "delete";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Users
             // 
@@ -76,12 +77,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(773, 480);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.UsersGridView);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Name = "Users";
             this.Text = "Users";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Users_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.UsersGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -91,7 +93,7 @@
 
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView UsersGridView;
         private System.Windows.Forms.Button button1;
     }
 }
