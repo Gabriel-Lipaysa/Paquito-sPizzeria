@@ -15,7 +15,7 @@ namespace Paquito_sPizzeria
     
     public partial class Admin : Form
     {
-        private string connectionString = "Server=localhost;Uid=root;Database=pizza_db_crev;";
+        private string connectionString = "Server=localhost;Uid=root;Database=pizza_pizza;";
         public Admin()
         {
             InitializeComponent();
