@@ -35,6 +35,16 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnProducts = new ReaLTaiizor.Controls.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblCompOrd = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnCompOrd = new ReaLTaiizor.Controls.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblPlaced = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnPlaced = new ReaLTaiizor.Controls.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblPending = new System.Windows.Forms.Label();
@@ -50,29 +60,19 @@
             this.lblUsers = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnUsers = new ReaLTaiizor.Controls.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblCompOrd = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnCompOrd = new ReaLTaiizor.Controls.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblPlaced = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnPlaced = new ReaLTaiizor.Controls.Button();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel6
@@ -82,9 +82,9 @@
             this.panel6.Controls.Add(this.pictureBox4);
             this.panel6.Controls.Add(this.btnProducts);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(3, 237);
+            this.panel6.Location = new System.Drawing.Point(3, 224);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(260, 283);
+            this.panel6.Size = new System.Drawing.Size(260, 260);
             this.panel6.TabIndex = 3;
             // 
             // label6
@@ -144,8 +144,8 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.panel5, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel4, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel5, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel8, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel7, 1, 1);
@@ -154,10 +154,134 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.74187F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.25813F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 523);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.45454F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.54546F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 487);
             this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.lblCompOrd);
+            this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.Controls.Add(this.btnCompOrd);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(269, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(260, 215);
+            this.panel4.TabIndex = 22;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749998F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(83, 102);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(117, 16);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Completed Orders";
+            // 
+            // lblCompOrd
+            // 
+            this.lblCompOrd.AutoSize = true;
+            this.lblCompOrd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCompOrd.Location = new System.Drawing.Point(105, 73);
+            this.lblCompOrd.Name = "lblCompOrd";
+            this.lblCompOrd.Size = new System.Drawing.Size(76, 25);
+            this.lblCompOrd.TabIndex = 1;
+            this.lblCompOrd.Text = "label2";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(92, 16);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnCompOrd
+            // 
+            this.btnCompOrd.BackColor = System.Drawing.Color.Transparent;
+            this.btnCompOrd.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.btnCompOrd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCompOrd.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.btnCompOrd.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(179)))));
+            this.btnCompOrd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCompOrd.Image = null;
+            this.btnCompOrd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCompOrd.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.btnCompOrd.Location = new System.Drawing.Point(86, 119);
+            this.btnCompOrd.Name = "btnCompOrd";
+            this.btnCompOrd.PressedBorderColor = System.Drawing.Color.Black;
+            this.btnCompOrd.PressedColor = System.Drawing.Color.White;
+            this.btnCompOrd.Size = new System.Drawing.Size(115, 40);
+            this.btnCompOrd.TabIndex = 5;
+            this.btnCompOrd.Text = "See Orders";
+            this.btnCompOrd.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label4);
+            this.panel5.Controls.Add(this.lblPlaced);
+            this.panel5.Controls.Add(this.pictureBox3);
+            this.panel5.Controls.Add(this.btnPlaced);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(535, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(262, 215);
+            this.panel5.TabIndex = 20;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749998F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(84, 102);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(94, 16);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Orders Placed";
+            // 
+            // lblPlaced
+            // 
+            this.lblPlaced.AutoSize = true;
+            this.lblPlaced.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlaced.Location = new System.Drawing.Point(93, 73);
+            this.lblPlaced.Name = "lblPlaced";
+            this.lblPlaced.Size = new System.Drawing.Size(76, 25);
+            this.lblPlaced.TabIndex = 7;
+            this.lblPlaced.Text = "label2";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(81, 16);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 6;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btnPlaced
+            // 
+            this.btnPlaced.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlaced.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.btnPlaced.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPlaced.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.btnPlaced.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(179)))));
+            this.btnPlaced.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlaced.Image = null;
+            this.btnPlaced.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPlaced.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.btnPlaced.Location = new System.Drawing.Point(74, 123);
+            this.btnPlaced.Name = "btnPlaced";
+            this.btnPlaced.PressedBorderColor = System.Drawing.Color.Black;
+            this.btnPlaced.PressedColor = System.Drawing.Color.White;
+            this.btnPlaced.Size = new System.Drawing.Size(115, 40);
+            this.btnPlaced.TabIndex = 9;
+            this.btnPlaced.Text = "See Orders";
+            this.btnPlaced.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // panel3
             // 
@@ -168,14 +292,14 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(260, 228);
+            this.panel3.Size = new System.Drawing.Size(260, 215);
             this.panel3.TabIndex = 16;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749998F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(82, 126);
+            this.label1.Location = new System.Drawing.Point(82, 102);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 16);
             this.label1.TabIndex = 8;
@@ -185,7 +309,7 @@
             // 
             this.lblPending.AutoSize = true;
             this.lblPending.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPending.Location = new System.Drawing.Point(93, 97);
+            this.lblPending.Location = new System.Drawing.Point(93, 73);
             this.lblPending.Name = "lblPending";
             this.lblPending.Size = new System.Drawing.Size(76, 25);
             this.lblPending.TabIndex = 7;
@@ -194,7 +318,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(81, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(81, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -212,7 +336,7 @@
             this.btnPending.Image = null;
             this.btnPending.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPending.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnPending.Location = new System.Drawing.Point(74, 147);
+            this.btnPending.Location = new System.Drawing.Point(74, 123);
             this.btnPending.Name = "btnPending";
             this.btnPending.PressedBorderColor = System.Drawing.Color.Black;
             this.btnPending.PressedColor = System.Drawing.Color.White;
@@ -228,9 +352,9 @@
             this.panel8.Controls.Add(this.pictureBox6);
             this.panel8.Controls.Add(this.btnAdmin);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(535, 237);
+            this.panel8.Location = new System.Drawing.Point(535, 224);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(262, 283);
+            this.panel8.Size = new System.Drawing.Size(262, 260);
             this.panel8.TabIndex = 14;
             // 
             // label10
@@ -290,9 +414,9 @@
             this.panel7.Controls.Add(this.pictureBox5);
             this.panel7.Controls.Add(this.btnUsers);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(269, 237);
+            this.panel7.Location = new System.Drawing.Point(269, 224);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(260, 283);
+            this.panel7.Size = new System.Drawing.Size(260, 260);
             this.panel7.TabIndex = 4;
             // 
             // label8
@@ -345,136 +469,12 @@
             this.btnUsers.Text = "See Orders";
             this.btnUsers.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.lblCompOrd);
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Controls.Add(this.btnCompOrd);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(269, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(260, 228);
-            this.panel4.TabIndex = 18;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749998F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(83, 126);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Completed Orders";
-            // 
-            // lblCompOrd
-            // 
-            this.lblCompOrd.AutoSize = true;
-            this.lblCompOrd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCompOrd.Location = new System.Drawing.Point(105, 97);
-            this.lblCompOrd.Name = "lblCompOrd";
-            this.lblCompOrd.Size = new System.Drawing.Size(76, 25);
-            this.lblCompOrd.TabIndex = 1;
-            this.lblCompOrd.Text = "label2";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(92, 40);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnCompOrd
-            // 
-            this.btnCompOrd.BackColor = System.Drawing.Color.Transparent;
-            this.btnCompOrd.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnCompOrd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCompOrd.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnCompOrd.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(179)))));
-            this.btnCompOrd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompOrd.Image = null;
-            this.btnCompOrd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCompOrd.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnCompOrd.Location = new System.Drawing.Point(86, 143);
-            this.btnCompOrd.Name = "btnCompOrd";
-            this.btnCompOrd.PressedBorderColor = System.Drawing.Color.Black;
-            this.btnCompOrd.PressedColor = System.Drawing.Color.White;
-            this.btnCompOrd.Size = new System.Drawing.Size(115, 40);
-            this.btnCompOrd.TabIndex = 5;
-            this.btnCompOrd.Text = "See Orders";
-            this.btnCompOrd.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.lblPlaced);
-            this.panel5.Controls.Add(this.pictureBox3);
-            this.panel5.Controls.Add(this.btnPlaced);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(535, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(262, 228);
-            this.panel5.TabIndex = 20;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749998F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(84, 126);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 16);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Orders Placed";
-            // 
-            // lblPlaced
-            // 
-            this.lblPlaced.AutoSize = true;
-            this.lblPlaced.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlaced.Location = new System.Drawing.Point(93, 97);
-            this.lblPlaced.Name = "lblPlaced";
-            this.lblPlaced.Size = new System.Drawing.Size(76, 25);
-            this.lblPlaced.TabIndex = 7;
-            this.lblPlaced.Text = "label2";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(81, 40);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
-            // 
-            // btnPlaced
-            // 
-            this.btnPlaced.BackColor = System.Drawing.Color.Transparent;
-            this.btnPlaced.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnPlaced.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPlaced.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnPlaced.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(179)))));
-            this.btnPlaced.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlaced.Image = null;
-            this.btnPlaced.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlaced.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnPlaced.Location = new System.Drawing.Point(74, 147);
-            this.btnPlaced.Name = "btnPlaced";
-            this.btnPlaced.PressedBorderColor = System.Drawing.Color.Black;
-            this.btnPlaced.PressedColor = System.Drawing.Color.White;
-            this.btnPlaced.Size = new System.Drawing.Size(115, 40);
-            this.btnPlaced.TabIndex = 9;
-            this.btnPlaced.Text = "See Orders";
-            this.btnPlaced.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 523);
+            this.ClientSize = new System.Drawing.Size(800, 487);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
@@ -485,6 +485,12 @@
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -494,12 +500,6 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -526,15 +526,15 @@
         private System.Windows.Forms.Label lblPending;
         private System.Windows.Forms.PictureBox pictureBox1;
         private ReaLTaiizor.Controls.Button btnPending;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblCompOrd;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private ReaLTaiizor.Controls.Button btnCompOrd;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblPlaced;
         private System.Windows.Forms.PictureBox pictureBox3;
         private ReaLTaiizor.Controls.Button btnPlaced;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblCompOrd;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private ReaLTaiizor.Controls.Button btnCompOrd;
     }
 }
