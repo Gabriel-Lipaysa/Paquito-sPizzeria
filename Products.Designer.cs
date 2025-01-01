@@ -31,6 +31,8 @@
             this.productGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.deleteBtn = new System.Windows.Forms.Button();
+            this.searchTxt = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnAdd = new ReaLTaiizor.Controls.HopeButton();
             this.btnEdit = new ReaLTaiizor.Controls.HopeButton();
             ((System.ComponentModel.ISupportInitialize)(this.productGridView)).BeginInit();
@@ -110,10 +112,29 @@
             this.btnEdit.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
+            // searchTxt
+            // 
+            this.searchTxt.Location = new System.Drawing.Point(407, 40);
+            this.searchTxt.Name = "searchTxt";
+            this.searchTxt.Size = new System.Drawing.Size(241, 22);
+            this.searchTxt.TabIndex = 5;
+            this.searchTxt.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(341, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 16);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Search";
+            // 
             // Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.searchTxt);
             this.ClientSize = new System.Drawing.Size(800, 418);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
@@ -136,6 +157,8 @@
         private System.Windows.Forms.DataGridView productGridView;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button deleteBtn;
+        private System.Windows.Forms.TextBox searchTxt;
+        private System.Windows.Forms.Label label2;
         private ReaLTaiizor.Controls.HopeButton btnAdd;
         private ReaLTaiizor.Controls.HopeButton btnEdit;
     }
