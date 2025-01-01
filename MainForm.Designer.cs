@@ -28,238 +28,197 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblTotalPrice = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button3 = new ReaLTaiizor.Controls.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.PanelMain = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.royalButton3 = new ReaLTaiizor.Controls.RoyalButton();
+            this.royalButton4 = new ReaLTaiizor.Controls.RoyalButton();
+            this.btn = new ReaLTaiizor.Controls.RoyalButton();
+            this.btnProd = new ReaLTaiizor.Controls.RoyalButton();
+            this.btnDash = new ReaLTaiizor.Controls.RoyalButton();
             this.panel1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.tableLayoutPanel1);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.PanelMain);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1067, 572);
+            this.panel1.Size = new System.Drawing.Size(989, 593);
             this.panel1.TabIndex = 0;
             // 
-            // tableLayoutPanel1
+            // panel3
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.panel5, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel4, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 123);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.68493F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.31507F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1067, 449);
-            this.tableLayoutPanel1.TabIndex = 1;
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(989, 106);
+            this.panel3.TabIndex = 3;
             // 
-            // panel5
+            // label5
             // 
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.pictureBox3);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(714, 4);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(349, 219);
-            this.panel5.TabIndex = 2;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Nunito ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(96, 31);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 29);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Panel";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749998F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(111, 126);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Nunito ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(25, 31);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Completed Orders";
+            this.label3.Size = new System.Drawing.Size(79, 29);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Admin";
             // 
-            // label4
+            // PanelMain
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(140, 90);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 31);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "label2";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(123, 20);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(133, 62);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.lblTotalPrice);
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Controls.Add(this.button3);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(359, 4);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(347, 219);
-            this.panel4.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749998F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(111, 126);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Completed Orders";
-            // 
-            // lblTotalPrice
-            // 
-            this.lblTotalPrice.AutoSize = true;
-            this.lblTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalPrice.Location = new System.Drawing.Point(140, 90);
-            this.lblTotalPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTotalPrice.Name = "lblTotalPrice";
-            this.lblTotalPrice.Size = new System.Drawing.Size(92, 31);
-            this.lblTotalPrice.TabIndex = 1;
-            this.lblTotalPrice.Text = "label2";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(123, 20);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(133, 62);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.button3.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(179)))));
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = null;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.button3.Location = new System.Drawing.Point(115, 151);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.PressedBorderColor = System.Drawing.Color.Black;
-            this.button3.PressedColor = System.Drawing.Color.White;
-            this.button3.Size = new System.Drawing.Size(153, 49);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "See Orders";
-            this.button3.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(4, 4);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(347, 219);
-            this.panel3.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(151, 90);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(115, 20);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 62);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.PanelMain.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.PanelMain.Location = new System.Drawing.Point(189, 106);
+            this.PanelMain.Name = "PanelMain";
+            this.PanelMain.Size = new System.Drawing.Size(800, 487);
+            this.PanelMain.TabIndex = 2;
             // 
             // panel2
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Controls.Add(this.royalButton3);
+            this.panel2.Controls.Add(this.royalButton4);
+            this.panel2.Controls.Add(this.btn);
+            this.panel2.Controls.Add(this.btnProd);
+            this.panel2.Controls.Add(this.btnDash);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1067, 123);
+            this.panel2.Size = new System.Drawing.Size(189, 593);
             this.panel2.TabIndex = 0;
+            // 
+            // royalButton3
+            // 
+            this.royalButton3.BackColor = System.Drawing.Color.Gray;
+            this.royalButton3.BorderColor = System.Drawing.Color.Transparent;
+            this.royalButton3.BorderThickness = 3;
+            this.royalButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.royalButton3.DrawBorder = true;
+            this.royalButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.royalButton3.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.royalButton3.Image = null;
+            this.royalButton3.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
+            this.royalButton3.Location = new System.Drawing.Point(0, 265);
+            this.royalButton3.Name = "royalButton3";
+            this.royalButton3.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(102)))), ((int)(((byte)(255)))));
+            this.royalButton3.PressedForeColor = System.Drawing.Color.White;
+            this.royalButton3.Size = new System.Drawing.Size(189, 40);
+            this.royalButton3.TabIndex = 22;
+            this.royalButton3.Text = "Products";
+            // 
+            // royalButton4
+            // 
+            this.royalButton4.BackColor = System.Drawing.Color.Gray;
+            this.royalButton4.BorderColor = System.Drawing.Color.Transparent;
+            this.royalButton4.BorderThickness = 3;
+            this.royalButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.royalButton4.DrawBorder = true;
+            this.royalButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.royalButton4.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.royalButton4.Image = null;
+            this.royalButton4.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
+            this.royalButton4.Location = new System.Drawing.Point(0, 225);
+            this.royalButton4.Name = "royalButton4";
+            this.royalButton4.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(102)))), ((int)(((byte)(255)))));
+            this.royalButton4.PressedForeColor = System.Drawing.Color.White;
+            this.royalButton4.Size = new System.Drawing.Size(189, 40);
+            this.royalButton4.TabIndex = 21;
+            this.royalButton4.Text = "Products";
+            // 
+            // btn
+            // 
+            this.btn.BackColor = System.Drawing.Color.Gray;
+            this.btn.BorderColor = System.Drawing.Color.Transparent;
+            this.btn.BorderThickness = 3;
+            this.btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn.DrawBorder = true;
+            this.btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btn.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.btn.Image = null;
+            this.btn.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
+            this.btn.Location = new System.Drawing.Point(0, 186);
+            this.btn.Name = "btn";
+            this.btn.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(102)))), ((int)(((byte)(255)))));
+            this.btn.PressedForeColor = System.Drawing.Color.White;
+            this.btn.Size = new System.Drawing.Size(189, 40);
+            this.btn.TabIndex = 20;
+            this.btn.Text = "Products";
+            // 
+            // btnProd
+            // 
+            this.btnProd.BackColor = System.Drawing.Color.Gray;
+            this.btnProd.BorderColor = System.Drawing.Color.Transparent;
+            this.btnProd.BorderThickness = 3;
+            this.btnProd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProd.DrawBorder = true;
+            this.btnProd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btnProd.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.btnProd.Image = null;
+            this.btnProd.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
+            this.btnProd.Location = new System.Drawing.Point(0, 146);
+            this.btnProd.Name = "btnProd";
+            this.btnProd.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(102)))), ((int)(((byte)(255)))));
+            this.btnProd.PressedForeColor = System.Drawing.Color.White;
+            this.btnProd.Size = new System.Drawing.Size(189, 40);
+            this.btnProd.TabIndex = 19;
+            this.btnProd.Text = "Products";
+            this.btnProd.Click += new System.EventHandler(this.btnProd_Click);
+            // 
+            // btnDash
+            // 
+            this.btnDash.BackColor = System.Drawing.Color.Gray;
+            this.btnDash.BorderColor = System.Drawing.Color.Transparent;
+            this.btnDash.BorderThickness = 3;
+            this.btnDash.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDash.DrawBorder = true;
+            this.btnDash.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btnDash.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.btnDash.Image = null;
+            this.btnDash.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
+            this.btnDash.Location = new System.Drawing.Point(0, 106);
+            this.btnDash.Name = "btnDash";
+            this.btnDash.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(102)))), ((int)(((byte)(255)))));
+            this.btnDash.PressedForeColor = System.Drawing.Color.White;
+            this.btnDash.Size = new System.Drawing.Size(189, 40);
+            this.btnDash.TabIndex = 0;
+            this.btnDash.Text = "Dashboard";
+            this.btnDash.Click += new System.EventHandler(this.btnDash_Click);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 572);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(989, 593);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -268,18 +227,14 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel PanelMain;
+        private ReaLTaiizor.Controls.RoyalButton btnDash;
+        private ReaLTaiizor.Controls.RoyalButton btnProd;
+        private ReaLTaiizor.Controls.RoyalButton royalButton3;
+        private ReaLTaiizor.Controls.RoyalButton royalButton4;
+        private ReaLTaiizor.Controls.RoyalButton btn;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label lblTotalPrice;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private ReaLTaiizor.Controls.Button button3;
     }
 }

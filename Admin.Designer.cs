@@ -39,9 +39,10 @@
             // 
             // deleteBtn
             // 
-            this.deleteBtn.Location = new System.Drawing.Point(575, 346);
+            this.deleteBtn.Location = new System.Drawing.Point(431, 281);
+            this.deleteBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(117, 49);
+            this.deleteBtn.Size = new System.Drawing.Size(88, 40);
             this.deleteBtn.TabIndex = 7;
             this.deleteBtn.Text = "delete";
             this.deleteBtn.UseVisualStyleBackColor = true;
@@ -50,34 +51,38 @@
             // UsersGridView
             // 
             this.UsersGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.UsersGridView.Location = new System.Drawing.Point(111, 119);
+            this.UsersGridView.Location = new System.Drawing.Point(91, 86);
+            this.UsersGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.UsersGridView.Name = "UsersGridView";
             this.UsersGridView.RowHeadersWidth = 51;
             this.UsersGridView.RowTemplate.Height = 24;
-            this.UsersGridView.Size = new System.Drawing.Size(581, 176);
+            this.UsersGridView.Size = new System.Drawing.Size(436, 143);
             this.UsersGridView.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(108, 62);
+            this.label1.Location = new System.Drawing.Point(88, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 16);
+            this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "User Accounts";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(111, 56);
+            this.textBox1.Location = new System.Drawing.Point(83, 46);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(0, 22);
+            this.textBox1.Size = new System.Drawing.Size(1, 20);
             this.textBox1.TabIndex = 4;
             // 
             // updateBtn
             // 
-            this.updateBtn.Location = new System.Drawing.Point(436, 346);
+            this.updateBtn.Location = new System.Drawing.Point(327, 281);
+            this.updateBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(117, 49);
+            this.updateBtn.Size = new System.Drawing.Size(88, 40);
             this.updateBtn.TabIndex = 8;
             this.updateBtn.Text = "update";
             this.updateBtn.UseVisualStyleBackColor = true;
@@ -85,9 +90,10 @@
             // 
             // registerBtn
             // 
-            this.registerBtn.Location = new System.Drawing.Point(298, 346);
+            this.registerBtn.Location = new System.Drawing.Point(224, 281);
+            this.registerBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.registerBtn.Name = "registerBtn";
-            this.registerBtn.Size = new System.Drawing.Size(117, 49);
+            this.registerBtn.Size = new System.Drawing.Size(88, 40);
             this.registerBtn.TabIndex = 9;
             this.registerBtn.Text = "register admin";
             this.registerBtn.UseVisualStyleBackColor = true;
@@ -95,16 +101,20 @@
             // 
             // Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(784, 388);
             this.Controls.Add(this.registerBtn);
             this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.UsersGridView);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Admin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
             this.Load += new System.EventHandler(this.Admin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.UsersGridView)).EndInit();

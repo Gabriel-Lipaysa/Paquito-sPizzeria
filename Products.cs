@@ -10,13 +10,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Paquito_sPizzeria
-{
+{   
     public partial class Products : Form
     {
+        private MainForm mainForm;
         private string connectionString = "Server=localhost;Uid=root;Database=pizza_pizza;";
-        public Products()
+        public Products(MainForm main)
         {
             InitializeComponent();
+            mainForm = main;
         }
         public void display()
         {
@@ -100,6 +102,16 @@ namespace Paquito_sPizzeria
                 }
             }
             
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            mainForm.LoadForm(new EditProducts());
+
         }
     }
 }
