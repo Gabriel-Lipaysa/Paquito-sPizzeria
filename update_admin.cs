@@ -13,7 +13,7 @@ namespace Paquito_sPizzeria
 {
     public partial class update_admin : Form
     {
-        private String connectionString = "Server=localhost;Uid=root;Database=pizza_db_crev;";
+        private String connectionString = "Server=localhost;Uid=root;Database=pizza_pizza";
 
         private int this_id;
         private string this_name;

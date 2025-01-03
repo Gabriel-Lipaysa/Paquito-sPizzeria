@@ -28,513 +28,533 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblProducts = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnProducts = new ReaLTaiizor.Controls.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblCompOrd = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnCompOrd = new ReaLTaiizor.Controls.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblPlaced = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnPlaced = new ReaLTaiizor.Controls.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblPending = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnPending = new ReaLTaiizor.Controls.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.hopeButton6 = new ReaLTaiizor.Controls.HopeButton();
             this.label10 = new System.Windows.Forms.Label();
             this.lblAdmin = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.btnAdmin = new ReaLTaiizor.Controls.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.hopeButton5 = new ReaLTaiizor.Controls.HopeButton();
             this.label8 = new System.Windows.Forms.Label();
             this.lblUsers = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.btnUsers = new ReaLTaiizor.Controls.Button();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnProducts = new ReaLTaiizor.Controls.HopeButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblProducts = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.hopeButton3 = new ReaLTaiizor.Controls.HopeButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblPlaced = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.hopeButton2 = new ReaLTaiizor.Controls.HopeButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblCompOrd = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.hopeButton1 = new ReaLTaiizor.Controls.HopeButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblPending = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel8.SuspendLayout();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel7.SuspendLayout();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.AutoSize = true;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.Controls.Add(this.panel6, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel5, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel4, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1095, 555);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.label6);
-            this.panel6.Controls.Add(this.lblProducts);
-            this.panel6.Controls.Add(this.pictureBox4);
-            this.panel6.Controls.Add(this.btnProducts);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(3, 224);
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel6.Controls.Add(this.hopeButton6);
+            this.panel6.Controls.Add(this.label10);
+            this.panel6.Controls.Add(this.lblAdmin);
+            this.panel6.Controls.Add(this.pictureBox6);
+            this.panel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(79)))), ((int)(((byte)(23)))));
+            this.panel6.Location = new System.Drawing.Point(764, 290);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(260, 260);
-            this.panel6.TabIndex = 3;
+            this.panel6.Size = new System.Drawing.Size(297, 251);
+            this.panel6.TabIndex = 5;
+            // 
+            // hopeButton6
+            // 
+            this.hopeButton6.BorderColor = System.Drawing.Color.White;
+            this.hopeButton6.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.hopeButton6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeButton6.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.hopeButton6.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.hopeButton6.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeButton6.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeButton6.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.hopeButton6.Location = new System.Drawing.Point(87, 181);
+            this.hopeButton6.Name = "hopeButton6";
+            this.hopeButton6.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
+            this.hopeButton6.Size = new System.Drawing.Size(120, 40);
+            this.hopeButton6.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.hopeButton6.TabIndex = 3;
+            this.hopeButton6.Text = "See Admins";
+            this.hopeButton6.TextColor = System.Drawing.Color.White;
+            this.hopeButton6.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.label10.Location = new System.Drawing.Point(95, 143);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(105, 22);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Admin Users";
+            // 
+            // lblAdmin
+            // 
+            this.lblAdmin.AutoSize = true;
+            this.lblAdmin.Font = new System.Drawing.Font("Nunito", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdmin.ForeColor = System.Drawing.Color.Black;
+            this.lblAdmin.Location = new System.Drawing.Point(105, 111);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(85, 33);
+            this.lblAdmin.TabIndex = 1;
+            this.lblAdmin.Text = "label1";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Paquito_sPizzeria.Properties.Resources.security;
+            this.pictureBox6.Location = new System.Drawing.Point(107, 22);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel5.Controls.Add(this.hopeButton5);
+            this.panel5.Controls.Add(this.label8);
+            this.panel5.Controls.Add(this.lblUsers);
+            this.panel5.Controls.Add(this.pictureBox5);
+            this.panel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(79)))), ((int)(((byte)(23)))));
+            this.panel5.Location = new System.Drawing.Point(399, 290);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(297, 251);
+            this.panel5.TabIndex = 4;
+            // 
+            // hopeButton5
+            // 
+            this.hopeButton5.BorderColor = System.Drawing.Color.White;
+            this.hopeButton5.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.hopeButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeButton5.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.hopeButton5.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.hopeButton5.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeButton5.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeButton5.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.hopeButton5.Location = new System.Drawing.Point(83, 181);
+            this.hopeButton5.Name = "hopeButton5";
+            this.hopeButton5.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
+            this.hopeButton5.Size = new System.Drawing.Size(120, 40);
+            this.hopeButton5.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.hopeButton5.TabIndex = 3;
+            this.hopeButton5.Text = "See Users";
+            this.hopeButton5.TextColor = System.Drawing.Color.White;
+            this.hopeButton5.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.label8.Location = new System.Drawing.Point(88, 143);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(111, 22);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Normal Users";
+            // 
+            // lblUsers
+            // 
+            this.lblUsers.AutoSize = true;
+            this.lblUsers.Font = new System.Drawing.Font("Nunito", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsers.ForeColor = System.Drawing.Color.Black;
+            this.lblUsers.Location = new System.Drawing.Point(101, 111);
+            this.lblUsers.Name = "lblUsers";
+            this.lblUsers.Size = new System.Drawing.Size(85, 33);
+            this.lblUsers.TabIndex = 1;
+            this.lblUsers.Text = "label1";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Paquito_sPizzeria.Properties.Resources.multiple_users_silhouette;
+            this.pictureBox5.Location = new System.Drawing.Point(103, 22);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel4.Controls.Add(this.btnProducts);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.lblProducts);
+            this.panel4.Controls.Add(this.pictureBox4);
+            this.panel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(79)))), ((int)(((byte)(23)))));
+            this.panel4.Location = new System.Drawing.Point(34, 290);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(297, 251);
+            this.panel4.TabIndex = 3;
+            // 
+            // btnProducts
+            // 
+            this.btnProducts.BorderColor = System.Drawing.Color.White;
+            this.btnProducts.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.btnProducts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProducts.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.btnProducts.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnProducts.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnProducts.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.btnProducts.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.btnProducts.Location = new System.Drawing.Point(87, 181);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
+            this.btnProducts.Size = new System.Drawing.Size(120, 40);
+            this.btnProducts.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.btnProducts.TabIndex = 3;
+            this.btnProducts.Text = "See Products";
+            this.btnProducts.TextColor = System.Drawing.Color.White;
+            this.btnProducts.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749998F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(76, 126);
+            this.label6.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.label6.Location = new System.Drawing.Point(84, 143);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 16);
-            this.label6.TabIndex = 8;
+            this.label6.Size = new System.Drawing.Size(126, 22);
+            this.label6.TabIndex = 2;
             this.label6.Text = "Products Added";
             // 
             // lblProducts
             // 
             this.lblProducts.AutoSize = true;
-            this.lblProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProducts.Location = new System.Drawing.Point(93, 97);
+            this.lblProducts.Font = new System.Drawing.Font("Nunito", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProducts.ForeColor = System.Drawing.Color.Black;
+            this.lblProducts.Location = new System.Drawing.Point(105, 111);
             this.lblProducts.Name = "lblProducts";
-            this.lblProducts.Size = new System.Drawing.Size(76, 25);
-            this.lblProducts.TabIndex = 7;
-            this.lblProducts.Text = "label2";
+            this.lblProducts.Size = new System.Drawing.Size(85, 33);
+            this.lblProducts.TabIndex = 1;
+            this.lblProducts.Text = "label1";
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(80, 40);
+            this.pictureBox4.Image = global::Paquito_sPizzeria.Properties.Resources.gears;
+            this.pictureBox4.Location = new System.Drawing.Point(107, 22);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox4.Size = new System.Drawing.Size(80, 80);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 6;
+            this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
-            // btnProducts
+            // panel3
             // 
-            this.btnProducts.BackColor = System.Drawing.Color.Transparent;
-            this.btnProducts.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnProducts.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProducts.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnProducts.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(179)))));
-            this.btnProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProducts.Image = null;
-            this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProducts.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnProducts.Location = new System.Drawing.Point(74, 147);
-            this.btnProducts.Name = "btnProducts";
-            this.btnProducts.PressedBorderColor = System.Drawing.Color.Black;
-            this.btnProducts.PressedColor = System.Drawing.Color.White;
-            this.btnProducts.Size = new System.Drawing.Size(115, 40);
-            this.btnProducts.TabIndex = 9;
-            this.btnProducts.Text = "See Orders";
-            this.btnProducts.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel3.Controls.Add(this.hopeButton3);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.lblPlaced);
+            this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(79)))), ((int)(((byte)(23)))));
+            this.panel3.Location = new System.Drawing.Point(764, 13);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(297, 251);
+            this.panel3.TabIndex = 2;
             // 
-            // tableLayoutPanel1
+            // hopeButton3
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.panel4, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel5, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel8, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.panel7, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.panel6, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.45454F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.54546F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 487);
-            this.tableLayoutPanel1.TabIndex = 2;
+            this.hopeButton3.BorderColor = System.Drawing.Color.White;
+            this.hopeButton3.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.hopeButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeButton3.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.hopeButton3.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.hopeButton3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeButton3.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeButton3.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.hopeButton3.Location = new System.Drawing.Point(87, 181);
+            this.hopeButton3.Name = "hopeButton3";
+            this.hopeButton3.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
+            this.hopeButton3.Size = new System.Drawing.Size(120, 40);
+            this.hopeButton3.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.hopeButton3.TabIndex = 3;
+            this.hopeButton3.Text = "See Orders";
+            this.hopeButton3.TextColor = System.Drawing.Color.White;
+            this.hopeButton3.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             // 
-            // panel4
+            // label4
             // 
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.lblCompOrd);
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Controls.Add(this.btnCompOrd);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(269, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(260, 215);
-            this.panel4.TabIndex = 22;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.label4.Location = new System.Drawing.Point(91, 143);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 22);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Orders Placed";
+            // 
+            // lblPlaced
+            // 
+            this.lblPlaced.AutoSize = true;
+            this.lblPlaced.Font = new System.Drawing.Font("Nunito", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlaced.ForeColor = System.Drawing.Color.Black;
+            this.lblPlaced.Location = new System.Drawing.Point(105, 111);
+            this.lblPlaced.Name = "lblPlaced";
+            this.lblPlaced.Size = new System.Drawing.Size(85, 33);
+            this.lblPlaced.TabIndex = 1;
+            this.lblPlaced.Text = "label1";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Paquito_sPizzeria.Properties.Resources.list;
+            this.pictureBox3.Location = new System.Drawing.Point(107, 22);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.Controls.Add(this.hopeButton2);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.lblCompOrd);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(79)))), ((int)(((byte)(23)))));
+            this.panel2.Location = new System.Drawing.Point(399, 13);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(297, 251);
+            this.panel2.TabIndex = 1;
+            // 
+            // hopeButton2
+            // 
+            this.hopeButton2.BorderColor = System.Drawing.Color.White;
+            this.hopeButton2.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.hopeButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeButton2.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.hopeButton2.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.hopeButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeButton2.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeButton2.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.hopeButton2.Location = new System.Drawing.Point(87, 181);
+            this.hopeButton2.Name = "hopeButton2";
+            this.hopeButton2.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
+            this.hopeButton2.Size = new System.Drawing.Size(120, 40);
+            this.hopeButton2.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.hopeButton2.TabIndex = 3;
+            this.hopeButton2.Text = "See Orders";
+            this.hopeButton2.TextColor = System.Drawing.Color.White;
+            this.hopeButton2.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749998F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(83, 102);
+            this.label2.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.label2.Location = new System.Drawing.Point(75, 143);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 16);
+            this.label2.Size = new System.Drawing.Size(144, 22);
             this.label2.TabIndex = 2;
             this.label2.Text = "Completed Orders";
             // 
             // lblCompOrd
             // 
             this.lblCompOrd.AutoSize = true;
-            this.lblCompOrd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCompOrd.Location = new System.Drawing.Point(105, 73);
+            this.lblCompOrd.Font = new System.Drawing.Font("Nunito", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCompOrd.ForeColor = System.Drawing.Color.Black;
+            this.lblCompOrd.Location = new System.Drawing.Point(105, 111);
             this.lblCompOrd.Name = "lblCompOrd";
-            this.lblCompOrd.Size = new System.Drawing.Size(76, 25);
+            this.lblCompOrd.Size = new System.Drawing.Size(85, 33);
             this.lblCompOrd.TabIndex = 1;
-            this.lblCompOrd.Text = "label2";
+            this.lblCompOrd.Text = "label1";
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(92, 16);
+            this.pictureBox2.Image = global::Paquito_sPizzeria.Properties.Resources._checked;
+            this.pictureBox2.Location = new System.Drawing.Point(107, 22);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(80, 80);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // btnCompOrd
+            // panel1
             // 
-            this.btnCompOrd.BackColor = System.Drawing.Color.Transparent;
-            this.btnCompOrd.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnCompOrd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCompOrd.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnCompOrd.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(179)))));
-            this.btnCompOrd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompOrd.Image = null;
-            this.btnCompOrd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCompOrd.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnCompOrd.Location = new System.Drawing.Point(86, 119);
-            this.btnCompOrd.Name = "btnCompOrd";
-            this.btnCompOrd.PressedBorderColor = System.Drawing.Color.Black;
-            this.btnCompOrd.PressedColor = System.Drawing.Color.White;
-            this.btnCompOrd.Size = new System.Drawing.Size(115, 40);
-            this.btnCompOrd.TabIndex = 5;
-            this.btnCompOrd.Text = "See Orders";
-            this.btnCompOrd.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Controls.Add(this.hopeButton1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblPending);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(79)))), ((int)(((byte)(23)))));
+            this.panel1.Location = new System.Drawing.Point(34, 13);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(297, 251);
+            this.panel1.TabIndex = 0;
             // 
-            // panel5
+            // hopeButton1
             // 
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.lblPlaced);
-            this.panel5.Controls.Add(this.pictureBox3);
-            this.panel5.Controls.Add(this.btnPlaced);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(535, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(262, 215);
-            this.panel5.TabIndex = 20;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749998F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(84, 102);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 16);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Orders Placed";
-            // 
-            // lblPlaced
-            // 
-            this.lblPlaced.AutoSize = true;
-            this.lblPlaced.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlaced.Location = new System.Drawing.Point(93, 73);
-            this.lblPlaced.Name = "lblPlaced";
-            this.lblPlaced.Size = new System.Drawing.Size(76, 25);
-            this.lblPlaced.TabIndex = 7;
-            this.lblPlaced.Text = "label2";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(81, 16);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
-            // 
-            // btnPlaced
-            // 
-            this.btnPlaced.BackColor = System.Drawing.Color.Transparent;
-            this.btnPlaced.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnPlaced.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPlaced.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnPlaced.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(179)))));
-            this.btnPlaced.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlaced.Image = null;
-            this.btnPlaced.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlaced.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnPlaced.Location = new System.Drawing.Point(74, 123);
-            this.btnPlaced.Name = "btnPlaced";
-            this.btnPlaced.PressedBorderColor = System.Drawing.Color.Black;
-            this.btnPlaced.PressedColor = System.Drawing.Color.White;
-            this.btnPlaced.Size = new System.Drawing.Size(115, 40);
-            this.btnPlaced.TabIndex = 9;
-            this.btnPlaced.Text = "See Orders";
-            this.btnPlaced.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.lblPending);
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Controls.Add(this.btnPending);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(260, 215);
-            this.panel3.TabIndex = 16;
+            this.hopeButton1.BorderColor = System.Drawing.Color.White;
+            this.hopeButton1.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.hopeButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeButton1.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.hopeButton1.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.hopeButton1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeButton1.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeButton1.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.hopeButton1.Location = new System.Drawing.Point(87, 181);
+            this.hopeButton1.Name = "hopeButton1";
+            this.hopeButton1.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
+            this.hopeButton1.Size = new System.Drawing.Size(120, 40);
+            this.hopeButton1.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.hopeButton1.TabIndex = 3;
+            this.hopeButton1.Text = "See Orders";
+            this.hopeButton1.TextColor = System.Drawing.Color.White;
+            this.hopeButton1.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749998F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(82, 102);
+            this.label1.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.label1.Location = new System.Drawing.Point(88, 143);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 16);
-            this.label1.TabIndex = 8;
+            this.label1.Size = new System.Drawing.Size(118, 22);
+            this.label1.TabIndex = 2;
             this.label1.Text = "Total Pendings";
             // 
             // lblPending
             // 
             this.lblPending.AutoSize = true;
-            this.lblPending.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPending.Location = new System.Drawing.Point(93, 73);
+            this.lblPending.Font = new System.Drawing.Font("Nunito", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPending.ForeColor = System.Drawing.Color.Black;
+            this.lblPending.Location = new System.Drawing.Point(105, 111);
             this.lblPending.Name = "lblPending";
-            this.lblPending.Size = new System.Drawing.Size(76, 25);
-            this.lblPending.TabIndex = 7;
-            this.lblPending.Text = "label2";
+            this.lblPending.Size = new System.Drawing.Size(85, 33);
+            this.lblPending.TabIndex = 1;
+            this.lblPending.Text = "label1";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(81, 16);
+            this.pictureBox1.Image = global::Paquito_sPizzeria.Properties.Resources.box;
+            this.pictureBox1.Location = new System.Drawing.Point(107, 22);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(80, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnPending
-            // 
-            this.btnPending.BackColor = System.Drawing.Color.Transparent;
-            this.btnPending.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnPending.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPending.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnPending.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(179)))));
-            this.btnPending.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPending.Image = null;
-            this.btnPending.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPending.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnPending.Location = new System.Drawing.Point(74, 123);
-            this.btnPending.Name = "btnPending";
-            this.btnPending.PressedBorderColor = System.Drawing.Color.Black;
-            this.btnPending.PressedColor = System.Drawing.Color.White;
-            this.btnPending.Size = new System.Drawing.Size(115, 40);
-            this.btnPending.TabIndex = 9;
-            this.btnPending.Text = "See Orders";
-            this.btnPending.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.label10);
-            this.panel8.Controls.Add(this.lblAdmin);
-            this.panel8.Controls.Add(this.pictureBox6);
-            this.panel8.Controls.Add(this.btnAdmin);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(535, 224);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(262, 260);
-            this.panel8.TabIndex = 14;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749998F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(89, 126);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 16);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Admin Users";
-            // 
-            // lblAdmin
-            // 
-            this.lblAdmin.AutoSize = true;
-            this.lblAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdmin.Location = new System.Drawing.Point(93, 97);
-            this.lblAdmin.Name = "lblAdmin";
-            this.lblAdmin.Size = new System.Drawing.Size(76, 25);
-            this.lblAdmin.TabIndex = 7;
-            this.lblAdmin.Text = "label2";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(81, 40);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 6;
-            this.pictureBox6.TabStop = false;
-            // 
-            // btnAdmin
-            // 
-            this.btnAdmin.BackColor = System.Drawing.Color.Transparent;
-            this.btnAdmin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdmin.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnAdmin.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(179)))));
-            this.btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdmin.Image = null;
-            this.btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdmin.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnAdmin.Location = new System.Drawing.Point(74, 147);
-            this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.PressedBorderColor = System.Drawing.Color.Black;
-            this.btnAdmin.PressedColor = System.Drawing.Color.White;
-            this.btnAdmin.Size = new System.Drawing.Size(115, 40);
-            this.btnAdmin.TabIndex = 9;
-            this.btnAdmin.Text = "See Orders";
-            this.btnAdmin.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.label8);
-            this.panel7.Controls.Add(this.lblUsers);
-            this.panel7.Controls.Add(this.pictureBox5);
-            this.panel7.Controls.Add(this.btnUsers);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(269, 224);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(260, 260);
-            this.panel7.TabIndex = 4;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749998F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(89, 126);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 16);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Normal Users";
-            // 
-            // lblUsers
-            // 
-            this.lblUsers.AutoSize = true;
-            this.lblUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsers.Location = new System.Drawing.Point(93, 97);
-            this.lblUsers.Name = "lblUsers";
-            this.lblUsers.Size = new System.Drawing.Size(76, 25);
-            this.lblUsers.TabIndex = 7;
-            this.lblUsers.Text = "label2";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(80, 40);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 6;
-            this.pictureBox5.TabStop = false;
-            // 
-            // btnUsers
-            // 
-            this.btnUsers.BackColor = System.Drawing.Color.Transparent;
-            this.btnUsers.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnUsers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUsers.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnUsers.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(179)))));
-            this.btnUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsers.Image = null;
-            this.btnUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsers.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.btnUsers.Location = new System.Drawing.Point(74, 147);
-            this.btnUsers.Name = "btnUsers";
-            this.btnUsers.PressedBorderColor = System.Drawing.Color.Black;
-            this.btnUsers.PressedColor = System.Drawing.Color.White;
-            this.btnUsers.Size = new System.Drawing.Size(115, 40);
-            this.btnUsers.TabIndex = 9;
-            this.btnUsers.Text = "See Orders";
-            this.btnUsers.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 487);
+            this.ClientSize = new System.Drawing.Size(1095, 555);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "container";
             this.Load += new System.EventHandler(this.container_Load);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lblProducts;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private ReaLTaiizor.Controls.Button btnProducts;
+
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lblUsers;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private ReaLTaiizor.Controls.Button btnUsers;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblPending;
+        private System.Windows.Forms.Label label1;
+        private ReaLTaiizor.Controls.HopeButton hopeButton1;
+        private System.Windows.Forms.Panel panel6;
+        private ReaLTaiizor.Controls.HopeButton hopeButton6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblAdmin;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private ReaLTaiizor.Controls.Button btnAdmin;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblPending;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private ReaLTaiizor.Controls.Button btnPending;
         private System.Windows.Forms.Panel panel5;
+        private ReaLTaiizor.Controls.HopeButton hopeButton5;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblUsers;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Panel panel4;
+        private ReaLTaiizor.Controls.HopeButton btnProducts;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblProducts;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel3;
+        private ReaLTaiizor.Controls.HopeButton hopeButton3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblPlaced;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private ReaLTaiizor.Controls.Button btnPlaced;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel2;
+        private ReaLTaiizor.Controls.HopeButton hopeButton2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblCompOrd;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private ReaLTaiizor.Controls.Button btnCompOrd;
     }
 }
