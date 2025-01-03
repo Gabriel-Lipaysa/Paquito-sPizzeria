@@ -82,7 +82,7 @@ namespace Paquito_sPizzeria
             string query = "select id, name, price, quantity, description from products where id like @search or name like @search or  price like @search or quantity like @search or description like @search ";
             string search = searchTxt.Text.Trim();
             if (search != null)
-            { 
+            {
                 using (var conn = new MySqlConnection(connectionString))
                 {
                     conn.Open();
@@ -93,16 +93,16 @@ namespace Paquito_sPizzeria
                         var dt = new DataTable();
                         adapter.Fill(dt);
                         productGridView.DataSource = dt;
-                            
+
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message);
                     }
                 }
             }
-            
 
+        }
         private void btnAdd_Click(object sender, EventArgs e)
         {
 

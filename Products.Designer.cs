@@ -41,34 +41,52 @@
             // productGridView
             // 
             this.productGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.productGridView.Location = new System.Drawing.Point(40, 59);
-            this.productGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.productGridView.Location = new System.Drawing.Point(53, 73);
+            this.productGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.productGridView.Name = "productGridView";
             this.productGridView.RowHeadersWidth = 51;
             this.productGridView.RowTemplate.Height = 24;
-            this.productGridView.Size = new System.Drawing.Size(637, 197);
+            this.productGridView.Size = new System.Drawing.Size(849, 242);
             this.productGridView.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 35);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(51, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.Size = new System.Drawing.Size(60, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Products";
             // 
             // deleteBtn
             // 
-            this.deleteBtn.Location = new System.Drawing.Point(207, 272);
-            this.deleteBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.deleteBtn.Location = new System.Drawing.Point(254, 334);
+            this.deleteBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(88, 41);
+            this.deleteBtn.Size = new System.Drawing.Size(117, 50);
             this.deleteBtn.TabIndex = 3;
             this.deleteBtn.Text = "delete ";
             this.deleteBtn.UseVisualStyleBackColor = true;
             this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
+            // 
+            // searchTxt
+            // 
+            this.searchTxt.Location = new System.Drawing.Point(543, 49);
+            this.searchTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.searchTxt.Name = "searchTxt";
+            this.searchTxt.Size = new System.Drawing.Size(320, 22);
+            this.searchTxt.TabIndex = 5;
+            this.searchTxt.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(455, 53);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 16);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Search";
             // 
             // btnAdd
             // 
@@ -80,10 +98,11 @@
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnAdd.HoverTextColor = System.Drawing.Color.White;
             this.btnAdd.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.btnAdd.Location = new System.Drawing.Point(40, 272);
+            this.btnAdd.Location = new System.Drawing.Point(53, 335);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
-            this.btnAdd.Size = new System.Drawing.Size(116, 40);
+            this.btnAdd.Size = new System.Drawing.Size(155, 49);
             this.btnAdd.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Add";
@@ -101,10 +120,11 @@
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnEdit.HoverTextColor = System.Drawing.Color.White;
             this.btnEdit.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.btnEdit.Location = new System.Drawing.Point(316, 271);
+            this.btnEdit.Location = new System.Drawing.Point(421, 334);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
-            this.btnEdit.Size = new System.Drawing.Size(116, 40);
+            this.btnEdit.Size = new System.Drawing.Size(155, 49);
             this.btnEdit.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
             this.btnEdit.TabIndex = 4;
             this.btnEdit.Text = "Edit";
@@ -112,37 +132,20 @@
             this.btnEdit.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // searchTxt
-            // 
-            this.searchTxt.Location = new System.Drawing.Point(407, 40);
-            this.searchTxt.Name = "searchTxt";
-            this.searchTxt.Size = new System.Drawing.Size(241, 22);
-            this.searchTxt.TabIndex = 5;
-            this.searchTxt.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(341, 43);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 16);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Search";
-            // 
             // Products
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1067, 514);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.searchTxt);
-            this.ClientSize = new System.Drawing.Size(800, 418);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.productGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Products";
             this.Text = "Products";
             this.Load += new System.EventHandler(this.Products_Load);
