@@ -56,12 +56,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nunito Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(67)))), ((int)(((byte)(73)))));
             this.label1.Location = new System.Drawing.Point(459, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 33);
+            this.label1.Size = new System.Drawing.Size(142, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "Products";
             // 
@@ -71,7 +71,7 @@
             this.label2.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(41, 158);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 22);
+            this.label2.Size = new System.Drawing.Size(75, 25);
             this.label2.TabIndex = 6;
             this.label2.Text = "Search";
             // 
@@ -101,7 +101,7 @@
             this.txtSearch.SelectedText = "";
             this.txtSearch.SelectionLength = 0;
             this.txtSearch.SelectionStart = 0;
-            this.txtSearch.Size = new System.Drawing.Size(258, 38);
+            this.txtSearch.Size = new System.Drawing.Size(258, 43);
             this.txtSearch.TabIndex = 8;
             this.txtSearch.TabStop = false;
             this.txtSearch.UseSystemPasswordChar = false;
@@ -199,14 +199,14 @@
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(54, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 22);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Image";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(910, 10);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(77, 25);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "Actions";
             // 
             // lblTotalProd
             // 
@@ -286,7 +286,7 @@
             // 
             // Products
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
@@ -297,9 +297,9 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.productLayout);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);

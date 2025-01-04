@@ -150,6 +150,12 @@
     <Compile Include="Components\ProductCardComponent.Designer.cs">
       <DependentUpon>ProductCardComponent.cs</DependentUpon>
     </Compile>
+    <Compile Include="orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orders.Designer.cs">
+      <DependentUpon>orders.cs</DependentUpon>
+    </Compile>
     <Compile Include="Products.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +220,9 @@
     <Compile Include="Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="orders.resx">
+      <DependentUpon>orders.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Products.resx">
       <DependentUpon>Products.cs</DependentUpon>
     </EmbeddedResource>
