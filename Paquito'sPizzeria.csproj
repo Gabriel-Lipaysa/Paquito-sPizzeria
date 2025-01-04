@@ -138,6 +138,12 @@
     <Compile Include="Components\ProductCardComponent.Designer.cs">
       <DependentUpon>ProductCardComponent.cs</DependentUpon>
     </Compile>
+    <Compile Include="orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orders.Designer.cs">
+      <DependentUpon>orders.cs</DependentUpon>
+    </Compile>
     <Compile Include="Products.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,12 @@
     <Compile Include="register_admin.Designer.cs">
       <DependentUpon>register_admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="update.Designer.cs">
+      <DependentUpon>update.cs</DependentUpon>
+    </Compile>
     <Compile Include="update_admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +202,9 @@
     <Compile Include="Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="orders.resx">
+      <DependentUpon>orders.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Products.resx">
       <DependentUpon>Products.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="register_admin.resx">
       <DependentUpon>register_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update.resx">
+      <DependentUpon>update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="update_admin.resx">
       <DependentUpon>update_admin.cs</DependentUpon>

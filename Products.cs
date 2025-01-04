@@ -1,6 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -36,7 +35,7 @@ namespace Paquito_sPizzeria
 
                     using (MySqlCommand cmd = new MySqlCommand(query, con))
                     {
-                        cmd.Parameters.AddWithValue("@search", "%" + search + "%"); 
+                        cmd.Parameters.AddWithValue("@search", "%" + search + "%");
 
                         using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
@@ -101,7 +100,7 @@ namespace Paquito_sPizzeria
             }
         }
 
-       
+
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             string search = txtSearch.Text.Trim();
