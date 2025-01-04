@@ -46,8 +46,14 @@ namespace Paquito_sPizzeria
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
-            Users user = new Users();
+            Users user = new Users(this);
             LoadForm(user);
+        }
+
+        private void btnCust_Click(object sender, EventArgs e)
+        {
+            Customization cust = new Customization(this);
+            LoadForm(cust);
         }
     }
 }

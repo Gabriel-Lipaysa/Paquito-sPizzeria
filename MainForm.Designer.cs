@@ -35,7 +35,7 @@
             this.PanelMain = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnUsers = new ReaLTaiizor.Controls.RoyalButton();
-            this.royalButton4 = new ReaLTaiizor.Controls.RoyalButton();
+            this.btnCust = new ReaLTaiizor.Controls.RoyalButton();
             this.btn = new ReaLTaiizor.Controls.RoyalButton();
             this.btnProd = new ReaLTaiizor.Controls.RoyalButton();
             this.btnDash = new ReaLTaiizor.Controls.RoyalButton();
@@ -102,7 +102,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel2.Controls.Add(this.btnUsers);
-            this.panel2.Controls.Add(this.royalButton4);
+            this.panel2.Controls.Add(this.btnCust);
             this.panel2.Controls.Add(this.btn);
             this.panel2.Controls.Add(this.btnProd);
             this.panel2.Controls.Add(this.btnDash);
@@ -133,25 +133,26 @@
             this.btnUsers.Text = "Users";
             this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
-            // royalButton4
+            // btnCust
             // 
-            this.royalButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.royalButton4.BorderColor = System.Drawing.Color.Transparent;
-            this.royalButton4.BorderThickness = 3;
-            this.royalButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.royalButton4.DrawBorder = true;
-            this.royalButton4.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.royalButton4.ForeColor = System.Drawing.Color.White;
-            this.royalButton4.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.royalButton4.Image = null;
-            this.royalButton4.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
-            this.royalButton4.Location = new System.Drawing.Point(0, 225);
-            this.royalButton4.Name = "royalButton4";
-            this.royalButton4.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.royalButton4.PressedForeColor = System.Drawing.Color.White;
-            this.royalButton4.Size = new System.Drawing.Size(189, 40);
-            this.royalButton4.TabIndex = 21;
-            this.royalButton4.Text = "Products";
+            this.btnCust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btnCust.BorderColor = System.Drawing.Color.Transparent;
+            this.btnCust.BorderThickness = 3;
+            this.btnCust.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCust.DrawBorder = true;
+            this.btnCust.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCust.ForeColor = System.Drawing.Color.White;
+            this.btnCust.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnCust.Image = null;
+            this.btnCust.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
+            this.btnCust.Location = new System.Drawing.Point(0, 225);
+            this.btnCust.Name = "btnCust";
+            this.btnCust.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnCust.PressedForeColor = System.Drawing.Color.White;
+            this.btnCust.Size = new System.Drawing.Size(189, 40);
+            this.btnCust.TabIndex = 21;
+            this.btnCust.Text = "Customization";
+            this.btnCust.Click += new System.EventHandler(this.btnCust_Click);
             // 
             // btn
             // 
@@ -242,7 +243,7 @@
         private ReaLTaiizor.Controls.RoyalButton btnDash;
         private ReaLTaiizor.Controls.RoyalButton btnProd;
         private ReaLTaiizor.Controls.RoyalButton btnUsers;
-        private ReaLTaiizor.Controls.RoyalButton royalButton4;
+        private ReaLTaiizor.Controls.RoyalButton btnCust;
         private ReaLTaiizor.Controls.RoyalButton btn;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;

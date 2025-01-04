@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblDesc = new System.Windows.Forms.Label();
             this.lblQty = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
             this.panelBg = new System.Windows.Forms.Panel();
+            this.richTextName = new System.Windows.Forms.RichTextBox();
+            this.richTxtDesc = new System.Windows.Forms.RichTextBox();
             this.btnDel = new System.Windows.Forms.PictureBox();
             this.btnEdit = new System.Windows.Forms.PictureBox();
             this.picBox = new System.Windows.Forms.PictureBox();
@@ -42,21 +42,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblDesc
-            // 
-            this.lblDesc.AutoSize = true;
-            this.lblDesc.BackColor = System.Drawing.Color.Transparent;
-            this.lblDesc.Location = new System.Drawing.Point(534, 48);
-            this.lblDesc.Name = "lblDesc";
-            this.lblDesc.Size = new System.Drawing.Size(30, 13);
-            this.lblDesc.TabIndex = 5;
-            this.lblDesc.Text = "desc";
-            // 
             // lblQty
             // 
             this.lblQty.AutoSize = true;
             this.lblQty.BackColor = System.Drawing.Color.Transparent;
-            this.lblQty.Location = new System.Drawing.Point(437, 48);
+            this.lblQty.Location = new System.Drawing.Point(415, 17);
             this.lblQty.Name = "lblQty";
             this.lblQty.Size = new System.Drawing.Size(24, 13);
             this.lblQty.TabIndex = 6;
@@ -67,24 +57,16 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrice.Location = new System.Drawing.Point(292, 48);
+            this.lblPrice.Location = new System.Drawing.Point(292, 17);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(31, 13);
             this.lblPrice.TabIndex = 7;
             this.lblPrice.Text = "Price";
             // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.BackColor = System.Drawing.Color.Transparent;
-            this.lblName.Location = new System.Drawing.Point(160, 48);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(35, 13);
-            this.lblName.TabIndex = 8;
-            this.lblName.Text = "Name";
-            // 
             // panelBg
             // 
+            this.panelBg.Controls.Add(this.richTextName);
+            this.panelBg.Controls.Add(this.richTxtDesc);
             this.panelBg.Controls.Add(this.lblPrice);
             this.panelBg.Controls.Add(this.btnDel);
             this.panelBg.Controls.Add(this.btnEdit);
@@ -96,6 +78,28 @@
             this.panelBg.TabIndex = 9;
             this.panelBg.MouseLeave += new System.EventHandler(this.panelBg_MouseLeave);
             this.panelBg.MouseHover += new System.EventHandler(this.panelBg_MouseHover);
+            // 
+            // richTextName
+            // 
+            this.richTextName.BackColor = System.Drawing.Color.White;
+            this.richTextName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextName.Location = new System.Drawing.Point(163, 18);
+            this.richTextName.Name = "richTextName";
+            this.richTextName.ReadOnly = true;
+            this.richTextName.Size = new System.Drawing.Size(109, 79);
+            this.richTextName.TabIndex = 8;
+            this.richTextName.Text = "";
+            // 
+            // richTxtDesc
+            // 
+            this.richTxtDesc.BackColor = System.Drawing.Color.White;
+            this.richTxtDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTxtDesc.Location = new System.Drawing.Point(546, 17);
+            this.richTxtDesc.Name = "richTxtDesc";
+            this.richTxtDesc.ReadOnly = true;
+            this.richTxtDesc.Size = new System.Drawing.Size(329, 79);
+            this.richTxtDesc.TabIndex = 8;
+            this.richTxtDesc.Text = "";
             // 
             // btnDel
             // 
@@ -138,12 +142,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.lblDesc);
             this.Controls.Add(this.lblQty);
-            this.Controls.Add(this.lblName);
             this.Controls.Add(this.panelBg);
             this.Name = "ProductCardComponent";
             this.Size = new System.Drawing.Size(1007, 115);
+            this.Load += new System.EventHandler(this.ProductCardComponent_Load);
             this.panelBg.ResumeLayout(false);
             this.panelBg.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnDel)).EndInit();
@@ -155,14 +158,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblDesc;
         private System.Windows.Forms.Label lblQty;
         private System.Windows.Forms.Label lblPrice;
-        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.PictureBox btnDel;
         private System.Windows.Forms.PictureBox btnEdit;
         private System.Windows.Forms.PictureBox picBox;
         private System.Windows.Forms.Panel panelBg;
+        private System.Windows.Forms.RichTextBox richTxtDesc;
+        private System.Windows.Forms.RichTextBox richTextName;
     }
 }

@@ -8,72 +8,71 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Paquito_sPizzeria.Forms;
 
 namespace Paquito_sPizzeria
 {
     public partial class Users : Form
     {
         private string connectionString = "Server=localhost;Uid=root;Database=pizza_pizza";
-        public Users()
+        private MainForm mainForm;
+        public Users(MainForm mainForm)
         {
+            this.mainForm = mainForm;
             InitializeComponent();
         }
 
-        public void display()
+        private void AddUsersCard(string id, string email, string username)
         {
-            string query = "select id, name, email from user";
-            var conn = new MySqlConnection(connectionString);
-            using (var cmd = new MySqlCommand(query, conn))
+            UserCardComponent user = new UserCardComponent(mainForm)
             {
-                conn.Open();
-                try
+                Id = id,
+                Email = email,
+                Username = username
+            };
+            userLayout.Controls.Add(user);
+        }
+        private void LoadUsers()
+        {
+            using (MySqlConnection con = new MySqlConnection(connectionString))
+            {   
+                con.Open();
+                using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM user", con))
                 {
-                    var adapter = new MySqlDataAdapter(cmd);
-                    var dataTable = new DataTable();
-                    adapter.Fill(dataTable);
-
-                    UsersGridView.DataSource = dataTable;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
+                    using(MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        userLayout.Controls.Clear();
+                        while (reader.Read())
+                        {
+                            string id = reader["id"].ToString();
+                            string email = reader["name"].ToString();
+                            string username = reader["email"].ToString();
+                            
+                            AddUsersCard(id, email, username);
+                        }
+                    }
                 }
             }
         }
-
         private void Users_Load(object sender, EventArgs e)
         {
-           display();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string query = "Delete from user where id = @id";
-            
-            if (UsersGridView.SelectedCells.Count > 0)
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
-                var selectedCell = UsersGridView.CurrentCell;
-                var rowIndex= selectedCell.RowIndex;
-                var selectedRow = UsersGridView.Rows[rowIndex];
-                var cellValue = selectedRow.Cells["id"].Value;
-                int id = int.Parse(cellValue.ToString());
-
-                using (var conn = new MySqlConnection(connectionString))
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand("SELECT COUNT(id) AS 'Total' FROM user", conn))
                 {
-                    try
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
-                        conn.Open();
-                        var cmd = new MySqlCommand(query, conn);
-                        cmd.Parameters.AddWithValue("id", id);
-                        cmd.ExecuteNonQuery();
-                        display();
-                    }
-                    catch(Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
+                        if (reader.Read())
+                        {
+                            lblTotalUser.Text = "Total: " + reader["Total"].ToString();
+                        }
                     }
                 }
             }
+            LoadUsers();
         }
+
+        
     }
 }

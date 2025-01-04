@@ -102,6 +102,18 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\CustComponent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CustComponent.Designer.cs">
+      <DependentUpon>CustComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customization.Designer.cs">
+      <DependentUpon>Customization.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +164,12 @@
     <EmbeddedResource Include="Components\ProductCardComponent.resx">
       <DependentUpon>ProductCardComponent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Components\CustComponent.resx">
+      <DependentUpon>CustComponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customization.resx">
+      <DependentUpon>Customization.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +196,12 @@
     <Compile Include="register_admin.Designer.cs">
       <DependentUpon>register_admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Size.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Size.Designer.cs">
+      <DependentUpon>Size.cs</DependentUpon>
+    </Compile>
     <Compile Include="update_admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="register_admin.resx">
       <DependentUpon>register_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Size.resx">
+      <DependentUpon>Size.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="update_admin.resx">
       <DependentUpon>update_admin.cs</DependentUpon>
@@ -244,6 +271,42 @@
     <None Include="icons\gears.png" />
     <None Include="icons\checked.png" />
     <None Include="icons\box.png" />
+    <Content Include="customization\6773eaf72c895.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="customization\6774c3c99d047.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="customization\6775c90a6412f.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="customization\6775c92609f17.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="customization\6775c94403865.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="customization\6775c9617a5b6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="customization\6775c987a63f7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="customization\6775c9beaa738.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="customization\6775c9ea21ab4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="customization\6775c9f9275c9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="customization\6775ca159e0d4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="customization\6775ca2c406b5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="products\11.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -268,10 +331,16 @@
     <Content Include="products\Italian Hawaiian.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="products\MC_KbgxNQk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="products\Onion and Beef Mushroom.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="products\Pepperoni.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="products\Pepp_pEhPrnr.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="products\pizza-1.jpg">
@@ -284,6 +353,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="products\pizza-5.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="products\Spinach-Bacon-Prod-images-500x500_I96kBpW.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="products\Spinach_Series_-_Classic_Spinach_3K5vGQN.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="products\TCB-WEBAPP-500x500_qBl7IbP.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="products\Triple Cheese.png">

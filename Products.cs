@@ -11,8 +11,7 @@ namespace Paquito_sPizzeria
         private MainForm mainForm;
         private string imagesDirectory = System.IO.Path.Combine(Application.StartupPath, "products");
         private string connectionString = "Server=localhost;Uid=root;Database=pizza_pizza;";
-        int? id;
-
+         
         public Products(MainForm main)
         {
             InitializeComponent();
@@ -20,8 +19,38 @@ namespace Paquito_sPizzeria
         }
 
         private void Products_Load(object sender, EventArgs e)
-        {
+        {   
+
             LoadData();
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand("SELECT COUNT(id) AS 'LowStock' FROM products WHERE quantity < 10", conn))
+                {
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            lblLowStock.Text = reader["LowStock"].ToString();
+                        }
+                    }
+                }
+            }
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand("SELECT COUNT(id) AS 'Total' FROM products", conn))
+                {
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            lblTotalProd.Text = reader["Total"].ToString();
+                        }
+                    }
+                }
+            }
         }
 
         private void LoadData(string search = "")
@@ -49,7 +78,8 @@ namespace Paquito_sPizzeria
                                 string imageName = reader["image"].ToString();
                                 int quantity = int.Parse(reader["quantity"].ToString());
                                 string description = reader["description"].ToString();
-
+                                
+                                
                                 Image productImage = LoadImage(imageName);
 
                                 AddProductCard(id, name, price, quantity, description, productImage);
@@ -69,14 +99,13 @@ namespace Paquito_sPizzeria
             ProductCardComponent productCard = new ProductCardComponent(mainForm)
             {
                 Id = id,
-                Name = name,
+                ProdName = name,
                 Price = price,
                 Quantity = quantity,
                 Description = description,
                 ProdImage = image,
                 Dock = DockStyle.Top
             };
-
             productLayout.Controls.Add(productCard);
         }
 
