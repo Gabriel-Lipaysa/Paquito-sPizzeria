@@ -1,6 +1,6 @@
 ﻿namespace Paquito_sPizzeria
 {
-    partial class EditProducts
+    partial class AddEditProducts
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAddProd = new ReaLTaiizor.Controls.HopeButton();
             this.btnChooseFile = new ReaLTaiizor.Controls.HopeButton();
-            this.picBox = new ReaLTaiizor.Controls.HopePictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtBoxQty = new ReaLTaiizor.Controls.HopeTextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,17 +39,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtBoxName = new ReaLTaiizor.Controls.HopeTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.picBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.picBox);
             this.panel1.Controls.Add(this.btnAddProd);
             this.panel1.Controls.Add(this.btnChooseFile);
-            this.panel1.Controls.Add(this.picBox);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtBoxQty);
             this.panel1.Controls.Add(this.label3);
@@ -59,7 +60,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtBoxName);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(122, 33);
+            this.panel1.Location = new System.Drawing.Point(269, 67);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(534, 394);
             this.panel1.TabIndex = 0;
@@ -105,18 +106,6 @@
             this.btnChooseFile.TextColor = System.Drawing.Color.White;
             this.btnChooseFile.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             this.btnChooseFile.Click += new System.EventHandler(this.btnChooseFile_Click);
-            // 
-            // picBox
-            // 
-            this.picBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.picBox.Location = new System.Drawing.Point(304, 18);
-            this.picBox.Name = "picBox";
-            this.picBox.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.picBox.Size = new System.Drawing.Size(200, 200);
-            this.picBox.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.picBox.TabIndex = 13;
-            this.picBox.TabStop = false;
-            this.picBox.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
             // label4
             // 
@@ -248,16 +237,28 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Product Name";
             // 
-            // EditProducts
+            // picBox
+            // 
+            this.picBox.Image = global::Paquito_sPizzeria.Properties.Resources.noImg1;
+            this.picBox.InitialImage = global::Paquito_sPizzeria.Properties.Resources.noImg1;
+            this.picBox.Location = new System.Drawing.Point(304, 18);
+            this.picBox.Name = "picBox";
+            this.picBox.Size = new System.Drawing.Size(200, 200);
+            this.picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBox.TabIndex = 1;
+            this.picBox.TabStop = false;
+            // 
+            // AddEditProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 487);
+            this.ClientSize = new System.Drawing.Size(1095, 555);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "EditProducts";
+            this.Name = "AddEditProducts";
             this.Text = "EditProducts";
+            this.Load += new System.EventHandler(this.EditProducts_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
@@ -276,8 +277,8 @@
         private System.Windows.Forms.Label label4;
         private ReaLTaiizor.Controls.HopeTextBox txtBoxQty;
         private System.Windows.Forms.Label label3;
-        private ReaLTaiizor.Controls.HopePictureBox picBox;
         private ReaLTaiizor.Controls.HopeButton btnChooseFile;
         private ReaLTaiizor.Controls.HopeButton btnAddProd;
+        private System.Windows.Forms.PictureBox picBox;
     }
 }

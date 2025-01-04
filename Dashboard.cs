@@ -8,14 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 namespace Paquito_sPizzeria
 {
     public partial class Dashboard : Form
-    {
-        private string connectionString = "Server=localhost;Uid=root;Database=pizza_db_crev;";
-        public Dashboard()
-        {
+    {   
+        private MainForm mainForm;
+        private string connectionString = "Server=localhost;Uid=root;Database=pizza_pizza";
+        public Dashboard(MainForm main)
+        {   
+            this.mainForm = main;
             InitializeComponent();
         }
 
@@ -131,6 +132,11 @@ namespace Paquito_sPizzeria
                     }
                 }
             }
+        }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+            mainForm.LoadForm(new Products(mainForm));
         }
     }
 }
