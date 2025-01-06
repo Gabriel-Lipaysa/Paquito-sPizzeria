@@ -171,7 +171,7 @@
             this.txtUser.TabIndex = 3;
             this.txtUser.TabStop = false;
             this.txtUser.UseSystemPasswordChar = false;
-            this.txtUser.Click += new System.EventHandler(this.txtUser_Click);
+            
             // 
             // panel1
             // 

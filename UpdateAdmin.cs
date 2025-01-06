@@ -11,25 +11,32 @@ using MySql.Data.MySqlClient;
 
 namespace Paquito_sPizzeria
 {
-    public partial class update_admin : Form
+    public partial class UpdateAdmin : Form
     {
         private String connectionString = "Server=localhost;Uid=root;Database=pizza_pizza";
 
         private int this_id;
         private string this_name;
-        public update_admin(int id, string name)
+        private MainForm mainForm;
+        public UpdateAdmin(int id, string name,MainForm main)
         {
             InitializeComponent();
             this_name = name;
             this_id = id;
+            this.mainForm = main;
         }
-
-        private void button1_Click(object sender, EventArgs e)
+       
+        private void update_admin_Load(object sender, EventArgs e)
         {
-            this.Close();
+            txtUser.Text = this_name;
         }
 
-        private void updateBtn_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            mainForm.LoadForm(new Admin(mainForm));
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
             String query = "update admin set name = @name, password = @password where id = @id";
             String query2 = "Select password from admin where id = @id";
@@ -41,21 +48,21 @@ namespace Paquito_sPizzeria
                 var dr = cmd2.ExecuteReader();
                 if (dr.Read())
                 {
-                    if(oldPasswordTxt.Text == dr[0].ToString())
+                    if (txtOld.Text == dr[0].ToString())
                     {
-                        if(confirmPasswordTxt.Text == newPasswordTxt.Text)
+                        if (txtCon.Text == txtNew.Text)
                         {
                             try
                             {
                                 if (!dr.IsClosed)
                                     dr.Close();
                                 var cmd = new MySqlCommand(query, conn);
-                                cmd.Parameters.AddWithValue("name", usernameTxt.Text);
+                                cmd.Parameters.AddWithValue("name", txtUser.Text);
                                 cmd.Parameters.AddWithValue("id", this_id);
-                                cmd.Parameters.AddWithValue("password", newPasswordTxt.Text);
+                                cmd.Parameters.AddWithValue("password", txtNew.Text);
                                 cmd.ExecuteNonQuery();
                                 MessageBox.Show("update successfully");
-                                this.Close();
+                                mainForm.LoadForm(new Admin(mainForm));
                             }
                             catch (Exception ex)
                             {
@@ -72,14 +79,9 @@ namespace Paquito_sPizzeria
                         MessageBox.Show("incorrect old password");
                     }
                 }
-                
-               
-            }
-        }
 
-        private void update_admin_Load(object sender, EventArgs e)
-        {
-            usernameTxt.Text = this_name;
-        }
+
+            }
+        }  
     }
 }

@@ -15,7 +15,7 @@ namespace Paquito_sPizzeria
     public partial class Customization : Form
     {
         private MainForm mainForm;
-        private string imagesDirectory = Path.Combine(Application.StartupPath, "customization");
+        private string imagesDirectory = Path.Combine(Application.StartupPath, "uploads/customization");
         private string conString = "Server=localhost;Uid=root;Database=pizza_pizza";
         private string imgName = "";
         private int custId;
@@ -84,9 +84,12 @@ namespace Paquito_sPizzeria
                                 int id = Convert.ToInt32(reader["cusID"]);
                                 string name = reader["cusName"].ToString();
                                 float price = float.Parse(reader["cusPrice"].ToString());
-                                string image = reader["cusImage"].ToString();
-                                ;
-                                AddCustomization(id, LoadImage(image), name, price);
+
+                                // Extract only the file name from the database path
+                                string imagePath = reader["cusImage"].ToString();
+                                string fileName = Path.GetFileName(imagePath);
+
+                                AddCustomization(id, LoadImage(fileName), name, price);
                             }
                         }
                     }
@@ -98,11 +101,12 @@ namespace Paquito_sPizzeria
             }
         }
 
-        private Image LoadImage(string imageName)
+
+        private Image LoadImage(string fileName)
         {
             try
             {
-                string fullPath = Path.Combine(imagesDirectory, imageName);
+                string fullPath = Path.Combine(imagesDirectory, fileName);
                 return File.Exists(fullPath) ? Image.FromFile(fullPath) : Properties.Resources.noImg1;
             }
             catch
@@ -195,7 +199,7 @@ namespace Paquito_sPizzeria
                         }
                         cmd.Parameters.AddWithValue("@name", txtCustName.Text);
                         cmd.Parameters.AddWithValue("@price", txtCustPrice.Text);
-                        cmd.Parameters.AddWithValue("@img", imgName);
+                        cmd.Parameters.AddWithValue("@img", "uploads/customization/" + imgName);
                         cmd.ExecuteNonQuery();
                     }
                 }

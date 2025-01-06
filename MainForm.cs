@@ -2,6 +2,7 @@
 using System;
 using System.Data;
 using System.Drawing;
+using System.Management;
 using System.Windows.Forms;
 
 namespace Paquito_sPizzeria
@@ -46,14 +47,40 @@ namespace Paquito_sPizzeria
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
-            Users user = new Users(this);
-            LoadForm(user);
+            Users size = new Users(this);
+            LoadForm(size);
         }
 
         private void btnCust_Click(object sender, EventArgs e)
         {
             Customization cust = new Customization(this);
             LoadForm(cust);
+        }
+
+        private void btnOrders_Click(object sender, EventArgs e)
+        {
+            Orders ord = new Orders(this);
+            LoadForm(ord);
+        }
+
+        private void btnSize_Click(object sender, EventArgs e)
+        {
+            Size size = new Size(this);
+            LoadForm(size);
+        }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            Admin admin = new Admin(this);
+            LoadForm(admin);
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            log.Show();
+            this.Hide();
+            
         }
     }
 }

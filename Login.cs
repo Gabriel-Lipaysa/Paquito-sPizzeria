@@ -52,7 +52,7 @@ namespace Paquito_sPizzeria
                         {
                             MainForm main = new MainForm();
                             main.Show();
-                            
+                            this.Hide();
                         }
                     }
                 }    
@@ -76,9 +76,6 @@ namespace Paquito_sPizzeria
                 return builder.ToString();
             }
         }
-        private void txtUser_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

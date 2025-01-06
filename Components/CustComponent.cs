@@ -46,9 +46,13 @@ namespace Paquito_sPizzeria
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
-        {   
-
+        {
+            using (MySqlConnection con = new MySqlConnection(conString))
+            {
+                con.Open();
                 mainForm.LoadForm(new Customization(mainForm, id: CustId));
+            }
+            
         }
 
         private void btnDel_Click(object sender, EventArgs e)

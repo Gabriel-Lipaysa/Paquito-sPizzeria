@@ -16,10 +16,13 @@ namespace Paquito_sPizzeria
     public partial class Admin : Form
     {
         private string connectionString = "Server=localhost;Uid=root;Database=pizza_pizza;";
-        public Admin()
+        private MainForm mainForm;
+        public Admin(MainForm main)
         {
+            this.mainForm = main;
             InitializeComponent();
         }
+
         public void display()
         {
             string query = "select id, name from admin";
@@ -47,7 +50,9 @@ namespace Paquito_sPizzeria
             display();
         }
 
-        private void deleteBtn_Click(object sender, EventArgs e)
+       
+
+        private void btnDel_Click(object sender, EventArgs e)
         {
             string query = "Delete from admin where id = @id";
 
@@ -77,7 +82,7 @@ namespace Paquito_sPizzeria
             }
         }
 
-        private void updateBtn_Click(object sender, EventArgs e)
+        private void btnEdit_Click(object sender, EventArgs e)
         {
             if (UsersGridView.SelectedCells.Count > 0)
             {
@@ -90,19 +95,8 @@ namespace Paquito_sPizzeria
                 int id = int.Parse(cellValueId.ToString());
                 String name = cellValueName.ToString();
 
-                update_admin update = new update_admin(id, name);
-                update.ShowDialog();
-                display();
+                mainForm.LoadForm(new UpdateAdmin(id, name,mainForm));
             }
-
-            
-        }
-
-        private void registerBtn_Click(object sender, EventArgs e)
-        {
-            register_admin register = new register_admin();
-            register.ShowDialog();
-            display();
         }
     }
 }
