@@ -16,7 +16,7 @@ namespace Paquito_sPizzeria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new sales_report());
+            Application.Run(new Login());
         }
     }
 }
