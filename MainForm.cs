@@ -59,7 +59,7 @@ namespace Paquito_sPizzeria
 
         private void btnOrders_Click(object sender, EventArgs e)
         {
-            Orders ord = new Orders(this);
+            Orders ord = new Orders();
             LoadForm(ord);
         }
 

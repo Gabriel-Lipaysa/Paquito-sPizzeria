@@ -43,11 +43,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 141);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 174);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 22);
+            this.label1.Size = new System.Drawing.Size(78, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Orders";
             // 
@@ -57,8 +56,8 @@
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 165);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(21, 203);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -67,7 +66,7 @@
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1039, 330);
+            this.dataGridView1.Size = new System.Drawing.Size(1385, 406);
             this.dataGridView1.TabIndex = 1;
             // 
             // lblTotal
@@ -77,41 +76,38 @@
             this.lblTotal.Location = new System.Drawing.Point(982, 141);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(55, 22);
+            this.lblTotal.Size = new System.Drawing.Size(67, 25);
             this.lblTotal.TabIndex = 2;
             this.lblTotal.Text = "Total: ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 79);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(16, 97);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 22);
+            this.label3.Size = new System.Drawing.Size(86, 25);
             this.label3.TabIndex = 5;
             this.label3.Text = "Search: ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(704, 79);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(939, 97);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(168, 22);
+            this.label4.Size = new System.Drawing.Size(197, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Filter Payment Status";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Nunito", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(67)))), ((int)(((byte)(73)))));
-            this.label5.Location = new System.Drawing.Point(437, 25);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(583, 31);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(244, 37);
+            this.label5.Size = new System.Drawing.Size(324, 39);
             this.label5.TabIndex = 0;
             this.label5.Text = "PLACED ORDERS";
             // 
@@ -125,8 +121,8 @@
             this.searchTxtBox.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.searchTxtBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.searchTxtBox.Hint = "";
-            this.searchTxtBox.Location = new System.Drawing.Point(83, 71);
-            this.searchTxtBox.Margin = new System.Windows.Forms.Padding(2);
+            this.searchTxtBox.Location = new System.Drawing.Point(111, 87);
+            this.searchTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchTxtBox.MaxLength = 32767;
             this.searchTxtBox.Multiline = false;
             this.searchTxtBox.Name = "searchTxtBox";
@@ -135,10 +131,11 @@
             this.searchTxtBox.SelectedText = "";
             this.searchTxtBox.SelectionLength = 0;
             this.searchTxtBox.SelectionStart = 0;
-            this.searchTxtBox.Size = new System.Drawing.Size(194, 38);
+            this.searchTxtBox.Size = new System.Drawing.Size(259, 43);
             this.searchTxtBox.TabIndex = 9;
             this.searchTxtBox.TabStop = false;
             this.searchTxtBox.UseSystemPasswordChar = false;
+            this.searchTxtBox.Click += new System.EventHandler(this.searchTxtBox_Click);
             this.searchTxtBox.TextChanged += new System.EventHandler(this.searchTxtBox_TextChanged);
             // 
             // filterCmb
@@ -157,7 +154,7 @@
             // 
             // Orders
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1095, 555);
@@ -170,7 +167,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Orders";
             this.RightToLeftLayout = true;
             this.Text = "orders";
