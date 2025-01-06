@@ -51,13 +51,37 @@ namespace Paquito_sPizzeria
                     orders.name as 'Customer', 
                     orders.number as 'Phone Number', 
                     orders.address as 'Address', 
-                    GROUP_CONCAT(CONCAT(order_items.name, ' (', IFNULL(customization.cusName, 'No Customization'), ')') SEPARATOR '\n') AS Product, 
+                    GROUP_CONCAT(
+                CONCAT(
+                order_items.quantity, 
+        'x ', 
+        order_items.name,
+        ' (',
+        size.sizename,
+        ')',
+        ' Customization: ',  
+        IFNULL(customization_names.cusNames, 'N/A')
+    ) 
+    SEPARATOR '\n'
+) AS Product, 
                     orders.total_price as 'Total', 
                     orders.method as 'Payment Method', 
                     orders.payment_status as 'Status' 
                 FROM orders 
-                join order_items ON orders.id = order_items.order_id 
-                LEFT JOIN customization ON FIND_IN_SET(customization.cusID, order_items.customizations) > 0 
+                join order_items ON orders.id = order_items.order_id
+                join size ON size.sizeID = order_items.size
+                LEFT JOIN 
+     (
+         SELECT 
+             order_items.id AS order_item_id,
+             GROUP_CONCAT(customization.cusName SEPARATOR ', ') AS cusNames
+         FROM 
+             order_items
+         LEFT JOIN 
+             customization ON FIND_IN_SET(customization.cusID, order_items.customizations) > 0
+         GROUP BY 
+             order_items.id
+     ) AS customization_names ON customization_names.order_item_id = order_items.id
                 WHERE 1 = 1
                 ";
 
