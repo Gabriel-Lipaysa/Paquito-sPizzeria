@@ -1,6 +1,6 @@
 ﻿namespace Paquito_sPizzeria
 {
-    partial class register_admin
+    partial class RegisterAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -37,6 +37,7 @@
             this.registerBtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.cancelBtn = new System.Windows.Forms.Button();
+            this.txtCustPrice = new ReaLTaiizor.Controls.HopeTextBox();
             this.SuspendLayout();
             // 
             // nameTxt
@@ -127,12 +128,36 @@
             this.cancelBtn.UseVisualStyleBackColor = true;
             this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
-            // register_admin
+            // txtCustPrice
+            // 
+            this.txtCustPrice.BackColor = System.Drawing.Color.White;
+            this.txtCustPrice.BaseColor = System.Drawing.Color.White;
+            this.txtCustPrice.BorderColorA = System.Drawing.Color.Black;
+            this.txtCustPrice.BorderColorB = System.Drawing.Color.Black;
+            this.txtCustPrice.Font = new System.Drawing.Font("Nunito", 9.749998F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustPrice.ForeColor = System.Drawing.Color.Black;
+            this.txtCustPrice.Hint = "";
+            this.txtCustPrice.Location = new System.Drawing.Point(178, 207);
+            this.txtCustPrice.MaxLength = 32767;
+            this.txtCustPrice.Multiline = false;
+            this.txtCustPrice.Name = "txtCustPrice";
+            this.txtCustPrice.PasswordChar = '\0';
+            this.txtCustPrice.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtCustPrice.SelectedText = "";
+            this.txtCustPrice.SelectionLength = 0;
+            this.txtCustPrice.SelectionStart = 0;
+            this.txtCustPrice.Size = new System.Drawing.Size(251, 34);
+            this.txtCustPrice.TabIndex = 22;
+            this.txtCustPrice.TabStop = false;
+            this.txtCustPrice.UseSystemPasswordChar = false;
+            // 
+            // RegisterAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.txtCustPrice);
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.registerBtn);
@@ -142,8 +167,8 @@
             this.Controls.Add(this.passwordTxt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nameTxt);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "register_admin";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "RegisterAdmin";
             this.Text = "register_admin";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -161,5 +186,6 @@
         private System.Windows.Forms.Button registerBtn;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button cancelBtn;
+        private ReaLTaiizor.Controls.HopeTextBox txtCustPrice;
     }
 }

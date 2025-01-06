@@ -108,6 +108,12 @@
     <Compile Include="Components\CustComponent.Designer.cs">
       <DependentUpon>CustComponent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\SizeCardComponent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\SizeCardComponent.Designer.cs">
+      <DependentUpon>SizeCardComponent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customization.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,11 +156,11 @@
     <Compile Include="Components\ProductCardComponent.Designer.cs">
       <DependentUpon>ProductCardComponent.cs</DependentUpon>
     </Compile>
-    <Compile Include="orders.cs">
+    <Compile Include="Orders.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="orders.Designer.cs">
-      <DependentUpon>orders.cs</DependentUpon>
+    <Compile Include="Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
     </Compile>
     <Compile Include="Products.cs">
       <SubType>Form</SubType>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\CustComponent.resx">
       <DependentUpon>CustComponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\SizeCardComponent.resx">
+      <DependentUpon>SizeCardComponent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customization.resx">
       <DependentUpon>Customization.cs</DependentUpon>
@@ -196,11 +205,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="register_admin.cs">
+    <Compile Include="RegisterAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="register_admin.Designer.cs">
-      <DependentUpon>register_admin.cs</DependentUpon>
+    <Compile Include="RegisterAdmin.Designer.cs">
+      <DependentUpon>RegisterAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="sales_report.cs">
       <SubType>Form</SubType>
@@ -214,11 +223,11 @@
     <Compile Include="Size.Designer.cs">
       <DependentUpon>Size.cs</DependentUpon>
     </Compile>
-    <Compile Include="update_admin.cs">
+    <Compile Include="UpdateAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="update_admin.Designer.cs">
-      <DependentUpon>update_admin.cs</DependentUpon>
+    <Compile Include="UpdateAdmin.Designer.cs">
+      <DependentUpon>UpdateAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Users.cs">
       <SubType>Form</SubType>
@@ -226,8 +235,8 @@
     <Compile Include="Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="orders.resx">
-      <DependentUpon>orders.cs</DependentUpon>
+    <EmbeddedResource Include="Orders.resx">
+      <DependentUpon>Orders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Products.resx">
       <DependentUpon>Products.cs</DependentUpon>
@@ -237,8 +246,8 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="register_admin.resx">
-      <DependentUpon>register_admin.cs</DependentUpon>
+    <EmbeddedResource Include="RegisterAdmin.resx">
+      <DependentUpon>RegisterAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="sales_report.resx">
       <DependentUpon>sales_report.cs</DependentUpon>
@@ -246,8 +255,8 @@
     <EmbeddedResource Include="Size.resx">
       <DependentUpon>Size.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="update_admin.resx">
-      <DependentUpon>update_admin.cs</DependentUpon>
+    <EmbeddedResource Include="UpdateAdmin.resx">
+      <DependentUpon>UpdateAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
@@ -289,40 +298,40 @@
     <None Include="icons\gears.png" />
     <None Include="icons\checked.png" />
     <None Include="icons\box.png" />
-    <Content Include="customization\6773eaf72c895.png">
+    <Content Include="uploads\customization\6773eaf72c895.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="customization\6774c3c99d047.png">
+    <Content Include="uploads\customization\6774c3c99d047.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="customization\6775c90a6412f.png">
+    <Content Include="uploads\customization\6775c90a6412f.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="customization\6775c92609f17.png">
+    <Content Include="uploads\customization\6775c92609f17.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="customization\6775c94403865.png">
+    <Content Include="uploads\customization\6775c94403865.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="customization\6775c9617a5b6.png">
+    <Content Include="uploads\customization\6775c9617a5b6.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="customization\6775c987a63f7.png">
+    <Content Include="uploads\customization\6775c987a63f7.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="customization\6775c9beaa738.png">
+    <Content Include="uploads\customization\6775c9beaa738.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="customization\6775c9ea21ab4.png">
+    <Content Include="uploads\customization\6775c9ea21ab4.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="customization\6775c9f9275c9.png">
+    <Content Include="uploads\customization\6775c9f9275c9.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="customization\6775ca159e0d4.png">
+    <Content Include="uploads\customization\6775ca159e0d4.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="customization\6775ca2c406b5.png">
+    <Content Include="uploads\customization\6775ca2c406b5.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="products\11.png">

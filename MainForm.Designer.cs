@@ -34,9 +34,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.PanelMain = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSize = new ReaLTaiizor.Controls.RoyalButton();
+            this.btnLogout = new ReaLTaiizor.Controls.RoyalButton();
+            this.btnAdmin = new ReaLTaiizor.Controls.RoyalButton();
             this.btnUsers = new ReaLTaiizor.Controls.RoyalButton();
             this.btnCust = new ReaLTaiizor.Controls.RoyalButton();
-            this.btn = new ReaLTaiizor.Controls.RoyalButton();
+            this.btnOrders = new ReaLTaiizor.Controls.RoyalButton();
             this.btnProd = new ReaLTaiizor.Controls.RoyalButton();
             this.btnDash = new ReaLTaiizor.Controls.RoyalButton();
             this.panel1.SuspendLayout();
@@ -101,9 +104,12 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel2.Controls.Add(this.btnSize);
+            this.panel2.Controls.Add(this.btnLogout);
+            this.panel2.Controls.Add(this.btnAdmin);
             this.panel2.Controls.Add(this.btnUsers);
             this.panel2.Controls.Add(this.btnCust);
-            this.panel2.Controls.Add(this.btn);
+            this.panel2.Controls.Add(this.btnOrders);
             this.panel2.Controls.Add(this.btnProd);
             this.panel2.Controls.Add(this.btnDash);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -111,6 +117,69 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(189, 661);
             this.panel2.TabIndex = 0;
+            // 
+            // btnSize
+            // 
+            this.btnSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btnSize.BorderColor = System.Drawing.Color.Transparent;
+            this.btnSize.BorderThickness = 3;
+            this.btnSize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSize.DrawBorder = true;
+            this.btnSize.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSize.ForeColor = System.Drawing.Color.White;
+            this.btnSize.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnSize.Image = null;
+            this.btnSize.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
+            this.btnSize.Location = new System.Drawing.Point(0, 271);
+            this.btnSize.Name = "btnSize";
+            this.btnSize.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnSize.PressedForeColor = System.Drawing.Color.White;
+            this.btnSize.Size = new System.Drawing.Size(189, 40);
+            this.btnSize.TabIndex = 22;
+            this.btnSize.Text = "Size";
+            this.btnSize.Click += new System.EventHandler(this.btnSize_Click);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btnLogout.BorderColor = System.Drawing.Color.Transparent;
+            this.btnLogout.BorderThickness = 3;
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.DrawBorder = true;
+            this.btnLogout.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnLogout.Image = null;
+            this.btnLogout.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
+            this.btnLogout.Location = new System.Drawing.Point(0, 409);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnLogout.PressedForeColor = System.Drawing.Color.White;
+            this.btnLogout.Size = new System.Drawing.Size(189, 40);
+            this.btnLogout.TabIndex = 22;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // btnAdmin
+            // 
+            this.btnAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btnAdmin.BorderColor = System.Drawing.Color.Transparent;
+            this.btnAdmin.BorderThickness = 3;
+            this.btnAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdmin.DrawBorder = true;
+            this.btnAdmin.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdmin.ForeColor = System.Drawing.Color.White;
+            this.btnAdmin.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnAdmin.Image = null;
+            this.btnAdmin.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
+            this.btnAdmin.Location = new System.Drawing.Point(0, 363);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnAdmin.PressedForeColor = System.Drawing.Color.White;
+            this.btnAdmin.Size = new System.Drawing.Size(189, 40);
+            this.btnAdmin.TabIndex = 22;
+            this.btnAdmin.Text = "Admin";
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // btnUsers
             // 
@@ -124,7 +193,7 @@
             this.btnUsers.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnUsers.Image = null;
             this.btnUsers.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
-            this.btnUsers.Location = new System.Drawing.Point(0, 265);
+            this.btnUsers.Location = new System.Drawing.Point(0, 317);
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnUsers.PressedForeColor = System.Drawing.Color.White;
@@ -154,25 +223,26 @@
             this.btnCust.Text = "Customization";
             this.btnCust.Click += new System.EventHandler(this.btnCust_Click);
             // 
-            // btn
+            // btnOrders
             // 
-            this.btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.btn.BorderColor = System.Drawing.Color.Transparent;
-            this.btn.BorderThickness = 3;
-            this.btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn.DrawBorder = true;
-            this.btn.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn.ForeColor = System.Drawing.Color.White;
-            this.btn.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btn.Image = null;
-            this.btn.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
-            this.btn.Location = new System.Drawing.Point(0, 186);
-            this.btn.Name = "btn";
-            this.btn.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btn.PressedForeColor = System.Drawing.Color.White;
-            this.btn.Size = new System.Drawing.Size(189, 40);
-            this.btn.TabIndex = 20;
-            this.btn.Text = "Products";
+            this.btnOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btnOrders.BorderColor = System.Drawing.Color.Transparent;
+            this.btnOrders.BorderThickness = 3;
+            this.btnOrders.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOrders.DrawBorder = true;
+            this.btnOrders.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrders.ForeColor = System.Drawing.Color.White;
+            this.btnOrders.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnOrders.Image = null;
+            this.btnOrders.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
+            this.btnOrders.Location = new System.Drawing.Point(0, 186);
+            this.btnOrders.Name = "btnOrders";
+            this.btnOrders.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnOrders.PressedForeColor = System.Drawing.Color.White;
+            this.btnOrders.Size = new System.Drawing.Size(189, 40);
+            this.btnOrders.TabIndex = 20;
+            this.btnOrders.Text = "Orders";
+            this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
             // 
             // btnProd
             // 
@@ -244,9 +314,12 @@
         private ReaLTaiizor.Controls.RoyalButton btnProd;
         private ReaLTaiizor.Controls.RoyalButton btnUsers;
         private ReaLTaiizor.Controls.RoyalButton btnCust;
-        private ReaLTaiizor.Controls.RoyalButton btn;
+        private ReaLTaiizor.Controls.RoyalButton btnOrders;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
+        private ReaLTaiizor.Controls.RoyalButton btnSize;
+        private ReaLTaiizor.Controls.RoyalButton btnAdmin;
+        private ReaLTaiizor.Controls.RoyalButton btnLogout;
     }
 }

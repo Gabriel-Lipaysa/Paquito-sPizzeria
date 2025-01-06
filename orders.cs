@@ -13,17 +13,19 @@ using MySqlX.XDevAPI.Common;
 
 namespace Paquito_sPizzeria
 {
-    public partial class orders : Form
+    public partial class Orders : Form
     {
         private string connectionString = "Server=localhost;Uid=root;Database=pizza_pizza;";
-        public orders()
+        private MainForm mainForm;
+        public Orders(MainForm mainForm)
         {
             InitializeComponent();
+            this.mainForm = mainForm;
         }
-       
+
         private void orders_Load(object sender, EventArgs e)
         {
-            filterCombo.SelectedIndex = 0;
+            cmbFilter.SelectedIndex = 0;
             String query = @"
                 select 
                     orders.id as 'ID', 
@@ -72,15 +74,15 @@ namespace Paquito_sPizzeria
             }
 
             int rowsCount = dataGridView1.Rows.Count - 1;
-            amountLbl.Text = rowsCount.ToString();
+            lblTotal.Text = rowsCount.ToString();
         }
 
-        private void filterCombo_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmbFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
             String query;
-            if(filterCombo.SelectedIndex != 1 && filterCombo.SelectedIndex != 2)
+            if (cmbFilter.SelectedIndex != 1 && cmbFilter.SelectedIndex != 2)
             {
-                 query = @"
+                query = @"
                 select 
                     orders.id as 'ID', 
                     orders.placed_on as 'Order Placed', 
@@ -103,11 +105,11 @@ namespace Paquito_sPizzeria
                     orders.total_price, 
                     orders.method, 
                     orders.payment_status 
-                    ORDER BY orders.placed_on DESC";    
+                    ORDER BY orders.placed_on DESC";
             }
-            else if(filterCombo.SelectedIndex == 1)
+            else if (cmbFilter.SelectedIndex == 1)
             {
-                 query = @"
+                query = @"
                 select 
                     orders.id as 'ID', 
                     orders.placed_on as 'Order Placed', 
@@ -135,7 +137,7 @@ namespace Paquito_sPizzeria
             }
             else
             {
-                 query = @"
+                query = @"
                 select 
                     orders.id as 'ID', 
                     orders.placed_on as 'Order Placed', 
@@ -186,7 +188,7 @@ namespace Paquito_sPizzeria
             }
 
             int rowsCount = dataGridView1.Rows.Count - 1;
-            amountLbl.Text = rowsCount.ToString();
+            lblTotal.Text = rowsCount.ToString();
         }
 
         private void searchTxtBox_TextChanged(object sender, EventArgs e)
@@ -228,7 +230,7 @@ namespace Paquito_sPizzeria
                         using (var cmd = new MySqlCommand(query, conn))
                         {
                             var adapter = new MySqlDataAdapter(cmd);
-                            adapter.SelectCommand.Parameters.AddWithValue("filter", "%"+searchTxtBox.Text+"%");
+                            adapter.SelectCommand.Parameters.AddWithValue("filter", "%" + searchTxtBox.Text + "%");
                             var dt = new DataTable();
                             adapter.Fill(dt);
 
@@ -243,9 +245,10 @@ namespace Paquito_sPizzeria
                 }
 
                 int rowsCount = dataGridView1.Rows.Count - 1;
-                amountLbl.Text = rowsCount.ToString();
+                lblTotal.Text = rowsCount.ToString();
             }
-            
+
         }
     }
+    
 }
