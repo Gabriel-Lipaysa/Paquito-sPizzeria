@@ -49,7 +49,8 @@ namespace Paquito_sPizzeria
                     using (var rd = com.ExecuteReader())
                     {
                         if (rd.Read())
-                        {
+                        {   
+
                             MainForm main = new MainForm();
                             main.Show();
                             this.Hide();
