@@ -134,9 +134,34 @@ namespace Paquito_sPizzeria
             }
         }
 
+        private void btnPending_Click(object sender, EventArgs e)
+        {
+            mainForm.LoadForm(new Orders(mainForm, 1));
+        }
+
+        private void btnCompleted_Click(object sender, EventArgs e)
+        {
+            mainForm.LoadForm(new Orders(mainForm, 2));
+        }
+
         private void btnProducts_Click(object sender, EventArgs e)
         {
             mainForm.LoadForm(new Products(mainForm));
+        }
+
+        private void btnOrders_Click(object sender, EventArgs e)
+        {
+            mainForm.LoadForm(new Orders(mainForm, 0));
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            mainForm.LoadForm(new Users(mainForm));
+        }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            mainForm.LoadForm(new Admin(mainForm));
         }
     }
 }

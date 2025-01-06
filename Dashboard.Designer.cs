@@ -30,12 +30,12 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.hopeButton6 = new ReaLTaiizor.Controls.HopeButton();
+            this.btnAdmin = new ReaLTaiizor.Controls.HopeButton();
             this.label10 = new System.Windows.Forms.Label();
             this.lblAdmin = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.hopeButton5 = new ReaLTaiizor.Controls.HopeButton();
+            this.btnUsers = new ReaLTaiizor.Controls.HopeButton();
             this.label8 = new System.Windows.Forms.Label();
             this.lblUsers = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -45,17 +45,17 @@
             this.lblProducts = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.hopeButton3 = new ReaLTaiizor.Controls.HopeButton();
+            this.btnOrders = new ReaLTaiizor.Controls.HopeButton();
             this.label4 = new System.Windows.Forms.Label();
             this.lblPlaced = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.hopeButton2 = new ReaLTaiizor.Controls.HopeButton();
+            this.btnCompleted = new ReaLTaiizor.Controls.HopeButton();
             this.label2 = new System.Windows.Forms.Label();
             this.lblCompOrd = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.hopeButton1 = new ReaLTaiizor.Controls.HopeButton();
+            this.btnPending = new ReaLTaiizor.Controls.HopeButton();
             this.label1 = new System.Windows.Forms.Label();
             this.lblPending = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -99,7 +99,7 @@
             // panel6
             // 
             this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel6.Controls.Add(this.hopeButton6);
+            this.panel6.Controls.Add(this.btnAdmin);
             this.panel6.Controls.Add(this.label10);
             this.panel6.Controls.Add(this.lblAdmin);
             this.panel6.Controls.Add(this.pictureBox6);
@@ -109,25 +109,26 @@
             this.panel6.Size = new System.Drawing.Size(297, 251);
             this.panel6.TabIndex = 5;
             // 
-            // hopeButton6
+            // btnAdmin
             // 
-            this.hopeButton6.BorderColor = System.Drawing.Color.White;
-            this.hopeButton6.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            this.hopeButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeButton6.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.hopeButton6.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.hopeButton6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeButton6.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeButton6.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeButton6.Location = new System.Drawing.Point(87, 181);
-            this.hopeButton6.Name = "hopeButton6";
-            this.hopeButton6.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
-            this.hopeButton6.Size = new System.Drawing.Size(120, 40);
-            this.hopeButton6.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.hopeButton6.TabIndex = 3;
-            this.hopeButton6.Text = "See Admins";
-            this.hopeButton6.TextColor = System.Drawing.Color.White;
-            this.hopeButton6.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.btnAdmin.BorderColor = System.Drawing.Color.White;
+            this.btnAdmin.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.btnAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdmin.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.btnAdmin.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnAdmin.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnAdmin.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.btnAdmin.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.btnAdmin.Location = new System.Drawing.Point(87, 181);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
+            this.btnAdmin.Size = new System.Drawing.Size(120, 40);
+            this.btnAdmin.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.btnAdmin.TabIndex = 3;
+            this.btnAdmin.Text = "See Admins";
+            this.btnAdmin.TextColor = System.Drawing.Color.White;
+            this.btnAdmin.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // label10
             // 
@@ -145,11 +146,11 @@
             this.lblAdmin.AutoSize = true;
             this.lblAdmin.Font = new System.Drawing.Font("Nunito", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdmin.ForeColor = System.Drawing.Color.Black;
-            this.lblAdmin.Location = new System.Drawing.Point(105, 111);
+            this.lblAdmin.Location = new System.Drawing.Point(137, 110);
             this.lblAdmin.Name = "lblAdmin";
-            this.lblAdmin.Size = new System.Drawing.Size(85, 33);
+            this.lblAdmin.Size = new System.Drawing.Size(29, 33);
             this.lblAdmin.TabIndex = 1;
-            this.lblAdmin.Text = "label1";
+            this.lblAdmin.Text = "0";
             // 
             // pictureBox6
             // 
@@ -164,7 +165,7 @@
             // panel5
             // 
             this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel5.Controls.Add(this.hopeButton5);
+            this.panel5.Controls.Add(this.btnUsers);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.lblUsers);
             this.panel5.Controls.Add(this.pictureBox5);
@@ -174,25 +175,26 @@
             this.panel5.Size = new System.Drawing.Size(297, 251);
             this.panel5.TabIndex = 4;
             // 
-            // hopeButton5
+            // btnUsers
             // 
-            this.hopeButton5.BorderColor = System.Drawing.Color.White;
-            this.hopeButton5.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            this.hopeButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeButton5.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.hopeButton5.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.hopeButton5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeButton5.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeButton5.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeButton5.Location = new System.Drawing.Point(83, 181);
-            this.hopeButton5.Name = "hopeButton5";
-            this.hopeButton5.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
-            this.hopeButton5.Size = new System.Drawing.Size(120, 40);
-            this.hopeButton5.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.hopeButton5.TabIndex = 3;
-            this.hopeButton5.Text = "See Users";
-            this.hopeButton5.TextColor = System.Drawing.Color.White;
-            this.hopeButton5.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.btnUsers.BorderColor = System.Drawing.Color.White;
+            this.btnUsers.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.btnUsers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUsers.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.btnUsers.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnUsers.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnUsers.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.btnUsers.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.btnUsers.Location = new System.Drawing.Point(83, 181);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
+            this.btnUsers.Size = new System.Drawing.Size(120, 40);
+            this.btnUsers.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.btnUsers.TabIndex = 3;
+            this.btnUsers.Text = "See Users";
+            this.btnUsers.TextColor = System.Drawing.Color.White;
+            this.btnUsers.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // label8
             // 
@@ -210,11 +212,11 @@
             this.lblUsers.AutoSize = true;
             this.lblUsers.Font = new System.Drawing.Font("Nunito", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsers.ForeColor = System.Drawing.Color.Black;
-            this.lblUsers.Location = new System.Drawing.Point(101, 111);
+            this.lblUsers.Location = new System.Drawing.Point(127, 110);
             this.lblUsers.Name = "lblUsers";
-            this.lblUsers.Size = new System.Drawing.Size(85, 33);
+            this.lblUsers.Size = new System.Drawing.Size(29, 33);
             this.lblUsers.TabIndex = 1;
-            this.lblUsers.Text = "label1";
+            this.lblUsers.Text = "0";
             // 
             // pictureBox5
             // 
@@ -276,11 +278,11 @@
             this.lblProducts.AutoSize = true;
             this.lblProducts.Font = new System.Drawing.Font("Nunito", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProducts.ForeColor = System.Drawing.Color.Black;
-            this.lblProducts.Location = new System.Drawing.Point(105, 111);
+            this.lblProducts.Location = new System.Drawing.Point(132, 110);
             this.lblProducts.Name = "lblProducts";
-            this.lblProducts.Size = new System.Drawing.Size(85, 33);
+            this.lblProducts.Size = new System.Drawing.Size(29, 33);
             this.lblProducts.TabIndex = 1;
-            this.lblProducts.Text = "label1";
+            this.lblProducts.Text = "0";
             // 
             // pictureBox4
             // 
@@ -295,7 +297,7 @@
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel3.Controls.Add(this.hopeButton3);
+            this.panel3.Controls.Add(this.btnOrders);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.lblPlaced);
             this.panel3.Controls.Add(this.pictureBox3);
@@ -305,25 +307,26 @@
             this.panel3.Size = new System.Drawing.Size(297, 251);
             this.panel3.TabIndex = 2;
             // 
-            // hopeButton3
+            // btnOrders
             // 
-            this.hopeButton3.BorderColor = System.Drawing.Color.White;
-            this.hopeButton3.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            this.hopeButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeButton3.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.hopeButton3.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.hopeButton3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeButton3.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeButton3.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeButton3.Location = new System.Drawing.Point(87, 181);
-            this.hopeButton3.Name = "hopeButton3";
-            this.hopeButton3.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
-            this.hopeButton3.Size = new System.Drawing.Size(120, 40);
-            this.hopeButton3.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.hopeButton3.TabIndex = 3;
-            this.hopeButton3.Text = "See Orders";
-            this.hopeButton3.TextColor = System.Drawing.Color.White;
-            this.hopeButton3.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.btnOrders.BorderColor = System.Drawing.Color.White;
+            this.btnOrders.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.btnOrders.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOrders.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.btnOrders.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnOrders.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnOrders.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.btnOrders.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.btnOrders.Location = new System.Drawing.Point(87, 181);
+            this.btnOrders.Name = "btnOrders";
+            this.btnOrders.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
+            this.btnOrders.Size = new System.Drawing.Size(120, 40);
+            this.btnOrders.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.btnOrders.TabIndex = 3;
+            this.btnOrders.Text = "See Orders";
+            this.btnOrders.TextColor = System.Drawing.Color.White;
+            this.btnOrders.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
             // 
             // label4
             // 
@@ -341,11 +344,11 @@
             this.lblPlaced.AutoSize = true;
             this.lblPlaced.Font = new System.Drawing.Font("Nunito", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlaced.ForeColor = System.Drawing.Color.Black;
-            this.lblPlaced.Location = new System.Drawing.Point(105, 111);
+            this.lblPlaced.Location = new System.Drawing.Point(137, 110);
             this.lblPlaced.Name = "lblPlaced";
-            this.lblPlaced.Size = new System.Drawing.Size(85, 33);
+            this.lblPlaced.Size = new System.Drawing.Size(29, 33);
             this.lblPlaced.TabIndex = 1;
-            this.lblPlaced.Text = "label1";
+            this.lblPlaced.Text = "0";
             // 
             // pictureBox3
             // 
@@ -360,7 +363,7 @@
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.Controls.Add(this.hopeButton2);
+            this.panel2.Controls.Add(this.btnCompleted);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.lblCompOrd);
             this.panel2.Controls.Add(this.pictureBox2);
@@ -370,25 +373,26 @@
             this.panel2.Size = new System.Drawing.Size(297, 251);
             this.panel2.TabIndex = 1;
             // 
-            // hopeButton2
+            // btnCompleted
             // 
-            this.hopeButton2.BorderColor = System.Drawing.Color.White;
-            this.hopeButton2.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            this.hopeButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeButton2.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.hopeButton2.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.hopeButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeButton2.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeButton2.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeButton2.Location = new System.Drawing.Point(87, 181);
-            this.hopeButton2.Name = "hopeButton2";
-            this.hopeButton2.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
-            this.hopeButton2.Size = new System.Drawing.Size(120, 40);
-            this.hopeButton2.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.hopeButton2.TabIndex = 3;
-            this.hopeButton2.Text = "See Orders";
-            this.hopeButton2.TextColor = System.Drawing.Color.White;
-            this.hopeButton2.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.btnCompleted.BorderColor = System.Drawing.Color.White;
+            this.btnCompleted.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.btnCompleted.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCompleted.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.btnCompleted.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnCompleted.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnCompleted.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.btnCompleted.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.btnCompleted.Location = new System.Drawing.Point(87, 181);
+            this.btnCompleted.Name = "btnCompleted";
+            this.btnCompleted.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
+            this.btnCompleted.Size = new System.Drawing.Size(120, 40);
+            this.btnCompleted.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.btnCompleted.TabIndex = 3;
+            this.btnCompleted.Text = "See Orders";
+            this.btnCompleted.TextColor = System.Drawing.Color.White;
+            this.btnCompleted.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.btnCompleted.Click += new System.EventHandler(this.btnCompleted_Click);
             // 
             // label2
             // 
@@ -406,11 +410,11 @@
             this.lblCompOrd.AutoSize = true;
             this.lblCompOrd.Font = new System.Drawing.Font("Nunito", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCompOrd.ForeColor = System.Drawing.Color.Black;
-            this.lblCompOrd.Location = new System.Drawing.Point(105, 111);
+            this.lblCompOrd.Location = new System.Drawing.Point(101, 110);
             this.lblCompOrd.Name = "lblCompOrd";
-            this.lblCompOrd.Size = new System.Drawing.Size(85, 33);
+            this.lblCompOrd.Size = new System.Drawing.Size(29, 33);
             this.lblCompOrd.TabIndex = 1;
-            this.lblCompOrd.Text = "label1";
+            this.lblCompOrd.Text = "0";
             // 
             // pictureBox2
             // 
@@ -425,7 +429,7 @@
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.Controls.Add(this.hopeButton1);
+            this.panel1.Controls.Add(this.btnPending);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblPending);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -435,25 +439,26 @@
             this.panel1.Size = new System.Drawing.Size(297, 251);
             this.panel1.TabIndex = 0;
             // 
-            // hopeButton1
+            // btnPending
             // 
-            this.hopeButton1.BorderColor = System.Drawing.Color.White;
-            this.hopeButton1.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            this.hopeButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeButton1.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.hopeButton1.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.hopeButton1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeButton1.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeButton1.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeButton1.Location = new System.Drawing.Point(87, 181);
-            this.hopeButton1.Name = "hopeButton1";
-            this.hopeButton1.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
-            this.hopeButton1.Size = new System.Drawing.Size(120, 40);
-            this.hopeButton1.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.hopeButton1.TabIndex = 3;
-            this.hopeButton1.Text = "See Orders";
-            this.hopeButton1.TextColor = System.Drawing.Color.White;
-            this.hopeButton1.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.btnPending.BorderColor = System.Drawing.Color.White;
+            this.btnPending.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.btnPending.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPending.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.btnPending.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnPending.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnPending.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.btnPending.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.btnPending.Location = new System.Drawing.Point(87, 181);
+            this.btnPending.Name = "btnPending";
+            this.btnPending.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(160)))), ((int)(((byte)(73)))));
+            this.btnPending.Size = new System.Drawing.Size(120, 40);
+            this.btnPending.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.btnPending.TabIndex = 3;
+            this.btnPending.Text = "See Orders";
+            this.btnPending.TextColor = System.Drawing.Color.White;
+            this.btnPending.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.btnPending.Click += new System.EventHandler(this.btnPending_Click);
             // 
             // label1
             // 
@@ -471,11 +476,11 @@
             this.lblPending.AutoSize = true;
             this.lblPending.Font = new System.Drawing.Font("Nunito", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPending.ForeColor = System.Drawing.Color.Black;
-            this.lblPending.Location = new System.Drawing.Point(105, 111);
+            this.lblPending.Location = new System.Drawing.Point(101, 110);
             this.lblPending.Name = "lblPending";
-            this.lblPending.Size = new System.Drawing.Size(85, 33);
+            this.lblPending.Size = new System.Drawing.Size(29, 33);
             this.lblPending.TabIndex = 1;
-            this.lblPending.Text = "label1";
+            this.lblPending.Text = "0";
             // 
             // pictureBox1
             // 
@@ -530,14 +535,14 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblPending;
         private System.Windows.Forms.Label label1;
-        private ReaLTaiizor.Controls.HopeButton hopeButton1;
+        private ReaLTaiizor.Controls.HopeButton btnPending;
         private System.Windows.Forms.Panel panel6;
-        private ReaLTaiizor.Controls.HopeButton hopeButton6;
+        private ReaLTaiizor.Controls.HopeButton btnAdmin;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblAdmin;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel panel5;
-        private ReaLTaiizor.Controls.HopeButton hopeButton5;
+        private ReaLTaiizor.Controls.HopeButton btnUsers;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblUsers;
         private System.Windows.Forms.PictureBox pictureBox5;
@@ -547,12 +552,12 @@
         private System.Windows.Forms.Label lblProducts;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel3;
-        private ReaLTaiizor.Controls.HopeButton hopeButton3;
+        private ReaLTaiizor.Controls.HopeButton btnOrders;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblPlaced;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel2;
-        private ReaLTaiizor.Controls.HopeButton hopeButton2;
+        private ReaLTaiizor.Controls.HopeButton btnCompleted;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblCompOrd;
         private System.Windows.Forms.PictureBox pictureBox2;

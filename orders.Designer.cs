@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lblTotal = new System.Windows.Forms.Label();
@@ -36,7 +36,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.searchTxtBox = new ReaLTaiizor.Controls.HopeTextBox();
-            this.cmbFilter = new ReaLTaiizor.Controls.HopeComboBox();
+            this.filterCmb = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,8 +63,8 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1039, 330);
@@ -74,7 +74,7 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(779, 141);
+            this.lblTotal.Location = new System.Drawing.Point(982, 141);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(55, 22);
@@ -141,26 +141,19 @@
             this.searchTxtBox.UseSystemPasswordChar = false;
             this.searchTxtBox.TextChanged += new System.EventHandler(this.searchTxtBox_TextChanged);
             // 
-            // cmbFilter
+            // filterCmb
             // 
-            this.cmbFilter.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
-            this.cmbFilter.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cmbFilter.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmbFilter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbFilter.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cmbFilter.FormattingEnabled = true;
-            this.cmbFilter.ItemHeight = 30;
-            this.cmbFilter.Items.AddRange(new object[] {
+            this.filterCmb.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filterCmb.FormattingEnabled = true;
+            this.filterCmb.Items.AddRange(new object[] {
             "Select an option...",
-            "Completed",
-            "Pending"});
-            this.cmbFilter.Location = new System.Drawing.Point(900, 71);
-            this.cmbFilter.Name = "cmbFilter";
-            this.cmbFilter.Size = new System.Drawing.Size(155, 36);
-            this.cmbFilter.TabIndex = 11;
-            this.cmbFilter.SelectedIndexChanged += new System.EventHandler(this.cmbFilter_SelectedIndexChanged);
+            "Pending",
+            "Completed"});
+            this.filterCmb.Location = new System.Drawing.Point(889, 76);
+            this.filterCmb.Name = "filterCmb";
+            this.filterCmb.Size = new System.Drawing.Size(166, 30);
+            this.filterCmb.TabIndex = 12;
+            this.filterCmb.SelectedIndexChanged += new System.EventHandler(this.filterCmb_SelectedIndexChanged);
             // 
             // Orders
             // 
@@ -168,7 +161,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1095, 555);
-            this.Controls.Add(this.cmbFilter);
+            this.Controls.Add(this.filterCmb);
             this.Controls.Add(this.searchTxtBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -181,7 +174,7 @@
             this.Name = "Orders";
             this.RightToLeftLayout = true;
             this.Text = "orders";
-            this.Load += new System.EventHandler(this.orders_Load);
+            this.Load += new System.EventHandler(this.Orders_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -197,6 +190,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private ReaLTaiizor.Controls.HopeTextBox searchTxtBox;
-        private ReaLTaiizor.Controls.HopeComboBox cmbFilter;
+        private System.Windows.Forms.ComboBox filterCmb;
     }
 }

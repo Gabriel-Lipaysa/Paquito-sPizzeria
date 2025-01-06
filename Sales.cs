@@ -12,10 +12,10 @@ using MySql.Data.MySqlClient;
 
 namespace Paquito_sPizzeria
 {
-    public partial class sales_report : Form
+    public partial class SalesReport : Form
     {
         private string connectionString = "Server=localhost;Uid=root;Database=pizza_pizza;";
-        public sales_report()
+        public SalesReport()
         {
             InitializeComponent();
         }
@@ -60,13 +60,13 @@ namespace Paquito_sPizzeria
         private void sales_report_Load(object sender, EventArgs e)
         {
             
-            MessageBox.Show(filterDate.Value.Year.ToString());
+            MessageBox.Show(dateFilter.Value.Year.ToString());
             display();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void searchTxtBox_TextChanged(object sender, EventArgs e)
         {
-            if(searchTxt.Text != null)
+            if (searchTxtBox.Text != null)
             {
 
                 String query = @"
@@ -96,7 +96,7 @@ namespace Paquito_sPizzeria
                         using (var cmd = new MySqlCommand(query, conn))
                         {
                             var adapter = new MySqlDataAdapter(cmd);
-                            adapter.SelectCommand.Parameters.AddWithValue("search", "%" + searchTxt.Text + "%");
+                            adapter.SelectCommand.Parameters.AddWithValue("search", "%" + searchTxtBox.Text + "%");
                             adapter.Fill(dt);
                             dataGridView1.DataSource = dt;
                         }
@@ -107,7 +107,7 @@ namespace Paquito_sPizzeria
                         MessageBox.Show(ex.Message);
                     }
                 }
-            
+
             }
             else
             {
@@ -115,10 +115,10 @@ namespace Paquito_sPizzeria
             }
         }
 
-        private void filterDate_ValueChanged(object sender, EventArgs e)
+        private void dateFilter_ValueChanged(object sender, EventArgs e)
         {
-            int selectedMonth = filterDate.Value.Month;
-            int selectedYear = filterDate.Value.Year;
+            int selectedMonth = dateFilter.Value.Month;
+            int selectedYear = dateFilter.Value.Year;
             String query = @"
                 select 
                     products.name, sales.qty, sales.price, sales.date,  GROUP_CONCAT(customization.cusName SEPARATOR '\n') AS customization_names, size.sizename
@@ -146,8 +146,8 @@ namespace Paquito_sPizzeria
                     using (var cmd = new MySqlCommand(query, conn))
                     {
                         var adapter = new MySqlDataAdapter(cmd);
-                        adapter.SelectCommand.Parameters.AddWithValue("year", selectedYear );
-                        adapter.SelectCommand.Parameters.AddWithValue("month",  selectedMonth );
+                        adapter.SelectCommand.Parameters.AddWithValue("year", selectedYear);
+                        adapter.SelectCommand.Parameters.AddWithValue("month", selectedMonth);
                         adapter.Fill(dt);
                         dataGridView1.DataSource = dt;
                     }

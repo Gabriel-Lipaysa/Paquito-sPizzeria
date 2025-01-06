@@ -42,6 +42,7 @@
             this.btnOrders = new ReaLTaiizor.Controls.RoyalButton();
             this.btnProd = new ReaLTaiizor.Controls.RoyalButton();
             this.btnDash = new ReaLTaiizor.Controls.RoyalButton();
+            this.btnSales = new ReaLTaiizor.Controls.RoyalButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -106,6 +107,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel2.Controls.Add(this.btnSize);
             this.panel2.Controls.Add(this.btnLogout);
+            this.panel2.Controls.Add(this.btnSales);
             this.panel2.Controls.Add(this.btnAdmin);
             this.panel2.Controls.Add(this.btnUsers);
             this.panel2.Controls.Add(this.btnCust);
@@ -130,7 +132,7 @@
             this.btnSize.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnSize.Image = null;
             this.btnSize.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
-            this.btnSize.Location = new System.Drawing.Point(0, 271);
+            this.btnSize.Location = new System.Drawing.Point(0, 192);
             this.btnSize.Name = "btnSize";
             this.btnSize.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnSize.PressedForeColor = System.Drawing.Color.White;
@@ -151,7 +153,7 @@
             this.btnLogout.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnLogout.Image = null;
             this.btnLogout.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
-            this.btnLogout.Location = new System.Drawing.Point(0, 409);
+            this.btnLogout.Location = new System.Drawing.Point(0, 468);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnLogout.PressedForeColor = System.Drawing.Color.White;
@@ -172,7 +174,7 @@
             this.btnAdmin.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnAdmin.Image = null;
             this.btnAdmin.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
-            this.btnAdmin.Location = new System.Drawing.Point(0, 363);
+            this.btnAdmin.Location = new System.Drawing.Point(0, 422);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnAdmin.PressedForeColor = System.Drawing.Color.White;
@@ -193,7 +195,7 @@
             this.btnUsers.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnUsers.Image = null;
             this.btnUsers.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
-            this.btnUsers.Location = new System.Drawing.Point(0, 317);
+            this.btnUsers.Location = new System.Drawing.Point(0, 376);
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnUsers.PressedForeColor = System.Drawing.Color.White;
@@ -214,7 +216,7 @@
             this.btnCust.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnCust.Image = null;
             this.btnCust.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
-            this.btnCust.Location = new System.Drawing.Point(0, 225);
+            this.btnCust.Location = new System.Drawing.Point(0, 238);
             this.btnCust.Name = "btnCust";
             this.btnCust.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnCust.PressedForeColor = System.Drawing.Color.White;
@@ -235,7 +237,7 @@
             this.btnOrders.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnOrders.Image = null;
             this.btnOrders.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
-            this.btnOrders.Location = new System.Drawing.Point(0, 186);
+            this.btnOrders.Location = new System.Drawing.Point(0, 284);
             this.btnOrders.Name = "btnOrders";
             this.btnOrders.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.btnOrders.PressedForeColor = System.Drawing.Color.White;
@@ -286,6 +288,27 @@
             this.btnDash.Text = "Dashboard";
             this.btnDash.Click += new System.EventHandler(this.btnDash_Click);
             // 
+            // btnSales
+            // 
+            this.btnSales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btnSales.BorderColor = System.Drawing.Color.Transparent;
+            this.btnSales.BorderThickness = 3;
+            this.btnSales.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSales.DrawBorder = true;
+            this.btnSales.Font = new System.Drawing.Font("Nunito", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSales.ForeColor = System.Drawing.Color.White;
+            this.btnSales.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnSales.Image = null;
+            this.btnSales.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
+            this.btnSales.Location = new System.Drawing.Point(0, 330);
+            this.btnSales.Name = "btnSales";
+            this.btnSales.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnSales.PressedForeColor = System.Drawing.Color.White;
+            this.btnSales.Size = new System.Drawing.Size(189, 40);
+            this.btnSales.TabIndex = 22;
+            this.btnSales.Text = "Sales";
+            this.btnSales.Click += new System.EventHandler(this.btnSales_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -321,5 +344,6 @@
         private ReaLTaiizor.Controls.RoyalButton btnSize;
         private ReaLTaiizor.Controls.RoyalButton btnAdmin;
         private ReaLTaiizor.Controls.RoyalButton btnLogout;
+        private ReaLTaiizor.Controls.RoyalButton btnSales;
     }
 }

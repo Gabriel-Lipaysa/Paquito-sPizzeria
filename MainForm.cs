@@ -82,5 +82,11 @@ namespace Paquito_sPizzeria
             this.Hide();
             
         }
+
+        private void btnSales_Click(object sender, EventArgs e)
+        {
+            SalesReport sales = new SalesReport();
+            LoadForm(sales);
+        }
     }
 }
