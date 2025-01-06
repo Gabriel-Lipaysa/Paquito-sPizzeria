@@ -60,7 +60,6 @@ namespace Paquito_sPizzeria
         private void sales_report_Load(object sender, EventArgs e)
         {
             
-            MessageBox.Show(filterDate.Value.Year.ToString());
             display();
         }
 
@@ -100,7 +99,6 @@ namespace Paquito_sPizzeria
                             adapter.Fill(dt);
                             dataGridView1.DataSource = dt;
                         }
-
                     }
                     catch (Exception ex)
                     {

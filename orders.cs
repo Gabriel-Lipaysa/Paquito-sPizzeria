@@ -17,210 +17,321 @@ namespace Paquito_sPizzeria
     {
         private string connectionString = "Server=localhost;Uid=root;Database=pizza_pizza;";
         private MainForm mainForm;
-        public Orders(MainForm mainForm)
+        public Orders()
         {
             InitializeComponent();
-            this.mainForm = mainForm;
+            //this.mainForm = mainForm;
+        }
+        private void display()
+        {
+            cmbFilter.SelectedIndex = 0;
+            String query =
+             @"
+                SELECT
+                    orders.id,
+                    placed_on,
+                    orders.name,
+                    orders.number,
+                    orders.address,
+                    GROUP_CONCAT(
+                        CONCAT(
+                            order_items.quantity, 
+                            'x ', 
+                            order_items.name,
+                            ' (',
+                            order_items.size,
+                            ')',
+                            ' Customization: ',  
+                            IFNULL(customization_names.cusNames, 'N/A')
+                        ) 
+                        SEPARATOR '\n'
+                    ) AS Product,
+                    orders.total_price,
+                    orders.method,
+                    orders.payment_status
+                FROM 
+                    orders
+                JOIN 
+                    order_items ON order_items.order_id = orders.id
+                LEFT JOIN 
+                    (
+                        SELECT 
+                            order_items.id AS order_item_id,
+                            GROUP_CONCAT(customization.cusName SEPARATOR ', ') AS cusNames
+                        FROM 
+                            order_items
+                        LEFT JOIN 
+                            customization ON FIND_IN_SET(customization.cusID, order_items.customizations) > 0
+                        GROUP BY 
+                            order_items.id
+                    ) AS customization_names ON customization_names.order_item_id = order_items.id
+                GROUP BY
+                    orders.id, orders.placed_on, orders.name, orders.number, orders.address, orders.total_price, orders.method, orders.payment_status
+
+            ";
+
+
+            using (var conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                try
+                {
+                    using (var cmd = new MySqlCommand(query, conn))
+                    {
+                        var adapter = new MySqlDataAdapter(cmd);
+                        var dt = new DataTable();
+                        adapter.Fill(dt);
+
+                        dataGridView1.DataSource = dt;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+
+            int rowsCount = dataGridView1.Rows.Count - 1;
+            lblTotal.Text = rowsCount.ToString();
         }
 
         private void orders_Load(object sender, EventArgs e)
         {
-            cmbFilter.SelectedIndex = 0;
-            String query = @"
-                select 
-                    orders.id as 'ID', 
-                    orders.placed_on as 'Order Placed', 
-                    orders.name as 'Customer', 
-                    orders.number as 'Phone Number', 
-                    orders.address as 'Address', 
-                    GROUP_CONCAT(CONCAT(order_items.name, ' (', IFNULL(customization.cusName, 'No Customization'), ')') SEPARATOR '\n') AS Product, 
-                    orders.total_price as 'Total', 
-                    orders.method as 'Payment Method', 
-                    orders.payment_status as 'Status' 
-                FROM orders 
-                join order_items ON orders.id = order_items.order_id 
-                LEFT JOIN customization ON FIND_IN_SET(customization.cusID, order_items.customizations) > 0 
-                GROUP BY 
-                    orders.id, 
-                    orders.placed_on, 
-                    orders.name, 
-                    orders.number, 
-                    orders.address, 
-                    orders.total_price, 
-                    orders.method, 
-                    orders.payment_status 
-                    ORDER BY orders.placed_on DESC";
-
-
-            using (var conn = new MySqlConnection(connectionString))
-            {
-                conn.Open();
-                try
-                {
-                    using (var cmd = new MySqlCommand(query, conn))
-                    {
-                        var adapter = new MySqlDataAdapter(cmd);
-                        var dt = new DataTable();
-                        adapter.Fill(dt);
-
-                        dataGridView1.DataSource = dt;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-
-            }
-
-            int rowsCount = dataGridView1.Rows.Count - 1;
-            lblTotal.Text = rowsCount.ToString();
+            display();
         }
+
 
         private void cmbFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
             String query;
-            if (cmbFilter.SelectedIndex != 1 && cmbFilter.SelectedIndex != 2)
+            if (cmbFilter.SelectedIndex == 2)
             {
-                query = @"
-                select 
-                    orders.id as 'ID', 
-                    orders.placed_on as 'Order Placed', 
-                    orders.name as 'Customer', 
-                    orders.number as 'Phone Number', 
-                    orders.address as 'Address', 
-                    GROUP_CONCAT(CONCAT(order_items.name, ' (', IFNULL(customization.cusName, 'No Customization'), ')') SEPARATOR '\n') AS Product, 
-                    orders.total_price as 'Total', 
-                    orders.method as 'Payment Method', 
-                    orders.payment_status as 'Status' 
-                FROM orders 
-                join order_items ON orders.id = order_items.order_id 
-                LEFT JOIN customization ON FIND_IN_SET(customization.cusID, order_items.customizations) > 0 
-                GROUP BY 
-                    orders.id, 
-                    orders.placed_on, 
-                    orders.name, 
-                    orders.number, 
-                    orders.address, 
-                    orders.total_price, 
-                    orders.method, 
-                    orders.payment_status 
-                    ORDER BY orders.placed_on DESC";
+
+                query =
+                @"
+                SELECT
+                    orders.id,
+                    placed_on,
+                    orders.name,
+                    orders.number,
+                    orders.address,
+                    GROUP_CONCAT(
+                        CONCAT(
+                            order_items.quantity, 
+                            'x ', 
+                            order_items.name,
+                            ' (',
+                            order_items.size,
+                            ')',
+                            ' Customization: ',  
+                            IFNULL(customization_names.cusNames, 'N/A')
+                        ) 
+                        SEPARATOR '\n'
+                    ) AS Product,
+                    orders.total_price,
+                    orders.method,
+                    orders.payment_status
+                FROM 
+                    orders
+                JOIN 
+                    order_items ON order_items.order_id = orders.id
+                LEFT JOIN 
+                    (
+                        SELECT 
+                            order_items.id AS order_item_id,
+                            GROUP_CONCAT(customization.cusName SEPARATOR ', ') AS cusNames
+                        FROM 
+                            order_items
+                        LEFT JOIN 
+                            customization ON FIND_IN_SET(customization.cusID, order_items.customizations) > 0
+                        GROUP BY 
+                            order_items.id
+                    ) AS customization_names ON customization_names.order_item_id = order_items.id
+                WHERE 
+                    orders.payment_status = 'pending'
+                GROUP BY
+                    orders.id, orders.placed_on, orders.name, orders.number, orders.address, orders.total_price, orders.method, orders.payment_status
+
+            ";
             }
             else if (cmbFilter.SelectedIndex == 1)
             {
-                query = @"
-                select 
-                    orders.id as 'ID', 
-                    orders.placed_on as 'Order Placed', 
-                    orders.name as 'Customer', 
-                    orders.number as 'Phone Number', 
-                    orders.address as 'Address', 
-                    GROUP_CONCAT(CONCAT(order_items.name, ' (', IFNULL(customization.cusName, 'No Customization'), ')') SEPARATOR '\n') AS Product, 
-                    orders.total_price as 'Total', 
-                    orders.method as 'Payment Method', 
-                    orders.payment_status as 'Status' 
-                FROM orders 
-                join order_items ON orders.id = order_items.order_id 
-                LEFT JOIN customization ON FIND_IN_SET(customization.cusID, order_items.customizations) > 0 
-                WHERE orders.payment_status = 'completed'
-                GROUP BY 
-                    orders.id, 
-                    orders.placed_on, 
-                    orders.name, 
-                    orders.number, 
-                    orders.address, 
-                    orders.total_price, 
-                    orders.method, 
-                    orders.payment_status 
-                    ORDER BY orders.placed_on DESC";
+                query =
+             @"
+                SELECT
+                    orders.id,
+                    placed_on,
+                    orders.name,
+                    orders.number,
+                    orders.address,
+                    GROUP_CONCAT(
+                        CONCAT(
+                            order_items.quantity, 
+                            'x ', 
+                            order_items.name,
+                            ' (',
+                            order_items.size,
+                            ')',
+                            ' Customization: ',  
+                            IFNULL(customization_names.cusNames, 'N/A')
+                        ) 
+                        SEPARATOR '\n'
+                    ) AS Product,
+                    orders.total_price,
+                    orders.method,
+                    orders.payment_status
+                FROM 
+                    orders
+                JOIN 
+                    order_items ON order_items.order_id = orders.id
+                LEFT JOIN 
+                    (
+                        SELECT 
+                            order_items.id AS order_item_id,
+                            GROUP_CONCAT(customization.cusName SEPARATOR ', ') AS cusNames
+                        FROM 
+                            order_items
+                        LEFT JOIN 
+                            customization ON FIND_IN_SET(customization.cusID, order_items.customizations) > 0
+                        GROUP BY 
+                            order_items.id
+                    ) AS customization_names ON customization_names.order_item_id = order_items.id
+                WHERE 
+                    orders.payment_status = 'Completed'
+                GROUP BY
+                    orders.id, orders.placed_on, orders.name, orders.number, orders.address, orders.total_price, orders.method, orders.payment_status
+
+            ";
             }
             else
             {
-                query = @"
-                select 
-                    orders.id as 'ID', 
-                    orders.placed_on as 'Order Placed', 
-                    orders.name as 'Customer', 
-                    orders.number as 'Phone Number', 
-                    orders.address as 'Address', 
-                    GROUP_CONCAT(CONCAT(order_items.name, ' (', IFNULL(customization.cusName, 'No Customization'), ')') SEPARATOR '\n') AS Product, 
-                    orders.total_price as 'Total', 
-                    orders.method as 'Payment Method', 
-                    orders.payment_status as 'Status' 
-                FROM orders 
-                join order_items ON orders.id = order_items.order_id 
-                LEFT JOIN customization ON FIND_IN_SET(customization.cusID, order_items.customizations) > 0 
-                WHERE orders.payment_status = 'pending'
-                GROUP BY 
-                    orders.id, 
-                    orders.placed_on, 
-                    orders.name, 
-                    orders.number, 
-                    orders.address, 
-                    orders.total_price, 
-                    orders.method, 
-                    orders.payment_status 
-                    ORDER BY orders.placed_on DESC";
+                query =
+                @"
+                    SELECT
+                        orders.id,
+                        placed_on,
+                        orders.name,
+                        orders.number,
+                        orders.address,
+                        GROUP_CONCAT(
+                            CONCAT(
+                                order_items.quantity, 
+                                'x ', 
+                                order_items.name,
+                                ' (',
+                                order_items.size,
+                                ')',
+                                ' Customization: ',  
+                                IFNULL(customization_names.cusNames, 'N/A')
+                            ) 
+                            SEPARATOR '\n'
+                        ) AS Product,
+                        orders.total_price,
+                        orders.method,
+                        orders.payment_status
+                    FROM 
+                        orders
+                    JOIN 
+                        order_items ON order_items.order_id = orders.id
+                    LEFT JOIN 
+                        (
+                            SELECT 
+                                order_items.id AS order_item_id,
+                                GROUP_CONCAT(customization.cusName SEPARATOR ', ') AS cusNames
+                            FROM 
+                                order_items
+                            LEFT JOIN 
+                                customization ON FIND_IN_SET(customization.cusID, order_items.customizations) > 0
+                            GROUP BY 
+                                order_items.id
+                        ) AS customization_names ON customization_names.order_item_id = order_items.id
+                    GROUP BY
+                        orders.id, orders.placed_on, orders.name, orders.number, orders.address, orders.total_price, orders.method, orders.payment_status
+
+                ";
+
             }
 
 
 
-            using (var conn = new MySqlConnection(connectionString))
-            {
-                conn.Open();
-                try
+                using (var conn = new MySqlConnection(connectionString))
                 {
-                    using (var cmd = new MySqlCommand(query, conn))
+                    conn.Open();
+                    try
                     {
-                        var adapter = new MySqlDataAdapter(cmd);
-                        var dt = new DataTable();
-                        adapter.Fill(dt);
+                        using (var cmd = new MySqlCommand(query, conn))
+                        {
+                            var adapter = new MySqlDataAdapter(cmd);
+                            var dt = new DataTable();
+                            adapter.Fill(dt);
 
-                        dataGridView1.DataSource = dt;
+                            dataGridView1.DataSource = dt;
+                        }
                     }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
                 }
 
+                int rowsCount = dataGridView1.Rows.Count - 1;
+                lblTotal.Text = rowsCount.ToString();
             }
 
-            int rowsCount = dataGridView1.Rows.Count - 1;
-            lblTotal.Text = rowsCount.ToString();
-        }
+        
 
         private void searchTxtBox_TextChanged(object sender, EventArgs e)
         {
             String query;
-            if (searchTxtBox.Text != null && searchTxtBox.TextLength > 0)
+
+            if (searchTxtBox.Text != null)
             {
                 query = @"
-                select 
-                    orders.id as 'ID', 
-                    orders.placed_on as 'Order Placed', 
-                    orders.name as 'Customer', 
-                    orders.number as 'Phone Number', 
-                    orders.address as 'Address', 
-                    GROUP_CONCAT(CONCAT(order_items.name, ' (', IFNULL(customization.cusName, 'No Customization'), ')') SEPARATOR '\n') AS Product, 
-                    orders.total_price as 'Total', 
-                    orders.method as 'Payment Method', 
-                    orders.payment_status as 'Status' 
-                FROM orders 
-                join order_items ON orders.id = order_items.order_id 
-                LEFT JOIN customization ON FIND_IN_SET(customization.cusID, order_items.customizations) > 0 
-                WHERE orders.name like @filter or orders.address like @filter
-                GROUP BY 
-                    orders.id, 
-                    orders.placed_on, 
-                    orders.name, 
-                    orders.number, 
-                    orders.address, 
-                    orders.total_price, 
-                    orders.method, 
-                    orders.payment_status 
-                    ORDER BY orders.placed_on DESC";
+                SELECT
+                    orders.id,
+                    placed_on,
+                    orders.name,
+                    orders.number,
+                    orders.address,
+                    GROUP_CONCAT(
+                        CONCAT(
+                            order_items.quantity, 
+                            'x ', 
+                            order_items.name,
+                            ' (',
+                            order_items.size,
+                            ')',
+                            ' Customization: ',  
+                            IFNULL(customization_names.cusNames, 'N/A')
+                        ) 
+                        SEPARATOR '\n'
+                    ) AS Product,
+                    orders.total_price,
+                    orders.method,
+                    orders.payment_status
+                FROM 
+                    orders
+                JOIN 
+                    order_items ON order_items.order_id = orders.id
+                LEFT JOIN 
+                    (
+                        SELECT 
+                            order_items.id AS order_item_id,
+                            GROUP_CONCAT(customization.cusName SEPARATOR ', ') AS cusNames
+                        FROM 
+                            order_items
+                        LEFT JOIN 
+                            customization ON FIND_IN_SET(customization.cusID, order_items.customizations) > 0
+                        GROUP BY 
+                            order_items.id
+                    ) AS customization_names ON customization_names.order_item_id = order_items.id
+                WHERE 
+                    orders.name like @filter or orders.address like @filter
+                GROUP BY
+                    orders.id, orders.placed_on, orders.name, orders.number, orders.address, orders.total_price, orders.method, orders.payment_status
+                ";
 
                 using (var conn = new MySqlConnection(connectionString))
                 {
@@ -247,8 +358,20 @@ namespace Paquito_sPizzeria
                 int rowsCount = dataGridView1.Rows.Count - 1;
                 lblTotal.Text = rowsCount.ToString();
             }
+            else
+            {
+                display();
+            }
+        }
 
+        private void cmbFilter_MouseClick(object sender, MouseEventArgs e)
+        {
+            searchTxtBox.Text = "";
+        }
+
+        private void searchTxtBox_Click(object sender, EventArgs e)
+        {
+            cmbFilter.SelectedIndex = 0;
         }
     }
-    
-}
+ }
